@@ -3,8 +3,8 @@
     "pages/index/index",
     "pages/environment_data/environment_data",
     "pages/systematic_management/systematic_management",
-    "page/contact_employee/contact_employee",
-    "page/urgent_management/urgent_management"
+    "pages/contact_employee/contact_employee",
+    "pages/urgent_management/urgent_management"
   ],
 
   "window": {
