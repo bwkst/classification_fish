@@ -1,2 +1,1 @@
-<!--page/contact_employee/contact_employee.wxml-->
-<text>page/contact_employee/contact_employee.wxml</text>
+<view class="title">联系员工</view>

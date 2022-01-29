@@ -1,4 +1,4 @@
-// page/contact_employee/contact_employee.js
+// pages/contact_employee/contact_employee.js
 Page({
 
   /**

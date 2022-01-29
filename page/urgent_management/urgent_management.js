@@ -1,4 +1,4 @@
-// page/urgent_management/urgent_management.js
+// pages/urgent_management/urgent_management.js
 Page({
 
   /**
