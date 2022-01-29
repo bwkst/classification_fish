@@ -1,4 +1,5 @@
 <!-- index.wxml -->
+<!-- test -->
 <view class="title">称重分鱼自动管理系统</view>
 <button class="button" style="width:50%"  bindtap="environment_data">渔场环境监测</button>
 <button class="button" style="width:50%" bindtap='systematic_management'>鱼类分流监测</button>
