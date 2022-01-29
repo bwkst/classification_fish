@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/environment_data/environment_data",
+    "pages/systematic_management/systematic_management",
+    "page/contact_employee/contact_employee",
+    "page/urgent_management/urgent_management"
+  ],
+
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "全自动称重分鱼",
+    "navigationBarTextStyle": "white"
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
