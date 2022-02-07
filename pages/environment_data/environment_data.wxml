@@ -1,1 +1,14 @@
-<view class="title">渔场环境监测</view>
+<view class="title">湿温检测仪</view>
+<view class="verti">
+  <text class="sstitle" space='nbsp'>  实时温度  </text>
+  <text class="sstitle" space='nbsp'>  实时湿度  </text>
+</view>
+<view class="verti">
+  <text class="content" space='nbsp'> XX温度 </text>
+  <text class="content" space='nbsp'> XX湿度 </text>
+</view>
+<view class="stitle">变化曲线图</view>
+<view class="verti">
+  <view>图一</view>
+  <view>图二</view>
+</view>

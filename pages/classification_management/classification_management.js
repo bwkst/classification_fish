@@ -1,4 +1,4 @@
-// pages/contact_employee/contact_employee.js
+// pages/classification_management/classification_management.js
 Page({
 
   /**

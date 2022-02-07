@@ -70,15 +70,15 @@ Page({
       })
   },
 
+  classification_management: function(){
+    wx.navigateTo({
+      url: '/pages/classification_management/classification_management',
+    })
+  },
+
   systematic_management: function(){
     wx.navigateTo({
       url: '/pages/systematic_management/systematic_management',
-      })
-  },
-
-  contact_employee: function(){
-    wx.navigateTo({
-      url: '/pages/contact_employee/contact_employee',
       })
   },
 

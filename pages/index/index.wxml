@@ -1,7 +1,11 @@
 <!-- index.wxml -->
 <!-- test -->
 <view class="title">称重分鱼自动管理系统</view>
-<button class="button" style="width:50%"  bindtap="environment_data">渔场环境监测</button>
-<button class="button" style="width:50%" bindtap='systematic_management'>鱼类分流监测</button>
-<button class="button" style="width:50%" bindtap="contact_employee">联系员工</button>
-<button class="button" style="width:50%" bindtap="urgent_management">紧急情况处理</button>
+<view class="verti">
+  <button class="button" bindtap="environment_data">湿温检测仪</button>
+  <button class="button" bindtap='classification_management'>分类计数仓</button>
+</view>
+<view class="verti">
+  <button class="button" bindtap='systematic_management'>鱼场监控室</button>
+  <button class="button" bindtap="urgent_management">紧急处理器</button>
+</view>
