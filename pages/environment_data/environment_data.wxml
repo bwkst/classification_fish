@@ -4,8 +4,8 @@
   <text class="sstitle" space='nbsp'>  实时湿度  </text>
 </view>
 <view class="verti">
-  <text class="content" space='nbsp'> XX温度 </text>
-  <text class="content" space='nbsp'> XX湿度 </text>
+  <text class="content" space='nbsp'>     XX温度     </text>
+  <text class="content" space='nbsp'>     XX湿度     </text>
 </view>
 <view class="stitle">变化曲线图</view>
 <view class="verti">
