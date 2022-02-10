@@ -1,9 +1,9 @@
 Page{
-  background-color: #E8EADC;
+  background-color: #E0ECDE;
 }
 
 .title{
-  color: #71838F;
+  color: #326F60;
   text-align: center;
   line-height: 2.5em;
   font-family: "Time New Roman";

@@ -1,9 +1,9 @@
 Page{
-  background-color: #E8EADC;
+  background-color: #E0ECDE;
 }
 
 .title{
-  color:#71838F;
+  color:#326F60;
   text-align: center;
   line-height: 2.5em;
   font-family: "Time New Roman";
@@ -13,7 +13,7 @@ Page{
 }
 
 .stitle{
-  color: #71838F;
+  color: #326F60;
   text-align: left;
   line-height: 2.5em;
   font-family: "Time New Roman";
@@ -23,8 +23,8 @@ Page{
 }
 
 .sstitle{
-  color: #71838F;
-  background-color: #E5CC96;
+  color: #264841;
+  background-color: #90C8BD;
   text-align: center;
   line-height: 2.5em;
   font-family: "Time New Roman";
@@ -36,7 +36,7 @@ Page{
 }
 
 .content{
-  color: #71838F;
+  color: #326F60;
   text-align: center;
   line-height: 2.5em;
   font-family: "Time New Roman";
@@ -44,9 +44,9 @@ Page{
   margin-bottom: 0.8em;
   margin-right: 1.3em;
   margin-left: 1.3em;
-  border: 3rpx solid;
-  border-color: #E5CC96;
-  border-radius: 15rpx;
+  border: 8rpx solid;
+  border-color: #90C8BD;
+  border-radius: 10rpx;
   padding: 10rpx;
 }
  

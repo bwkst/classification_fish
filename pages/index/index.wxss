@@ -1,9 +1,9 @@
 Page{
-  background-color: #E8EADC;
+  background-color: #E0ECDE;
 }
 
 .title{
-  color: #71838F;
+  color: #326F60;
   text-align: center;
   line-height: 2.5em;
   font-family: "Time New Roman";
@@ -19,8 +19,8 @@ Page{
   line-height: 10em;  
   width: 20%;
   margin-top: 2.5em;
-  background-color: black;
-  color: white;
+  background-color: #90C8BD;
+  color: #264841;
 }
 
 .verti{
