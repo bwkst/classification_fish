@@ -15,11 +15,11 @@ Page{
 .button{
   align-items: center;
   font-family: "Time New Roman";
-  font-size: 1.2em;
-  line-height: 10em;  
-  width: 20%;
-  margin-top: 2.5em;
-  background-color: #90C8BD;
+  font-size:1.2em;
+  line-height: 2em;  
+  margin-top: 1.0em;
+  border-radius: 30px;
+  background-color: #90c8bd;
   color: #264841;
 }
 
@@ -28,3 +28,27 @@ Page{
   flex-direction: row;
   justify-content: center;
 }
+
+.image{
+  width: 90px;
+  height: 90px;
+}
+
+.swiper {
+ 
+  width: 100%;
+  height: 200rpx;
+  }
+  swiper image{
+  width: 100%;
+  height: 600rpx;
+   
+  }
+
+.versionID {
+    position: fixed;
+    text-align: right;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+  }

@@ -1,11 +1,47 @@
 <!-- index.wxml -->
-<!-- test -->
-<view class="title">称重分鱼自动管理系统</view>
-<view class="verti">
-  <button class="button" bindtap="environment_data">湿温检测仪</button>
-  <button class="button" bindtap='classification_management'>分类计数仓</button>
+<view class="title">称重分鱼自动管理系统
+<text>\n</text>
 </view>
+
+
+<!-- 滑动的图片 -->
+<!-- <view>
+  <swiper class="swiper" autoplay="true" interval="2000" >
+    <swiper-item>
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
+    </swiper-item>
+ 
+  </swiper>
+</view> -->
+
 <view class="verti">
-  <button class="button" bindtap='systematic_management'>鱼场监控室</button>
-  <button class="button" bindtap="urgent_management">紧急处理器</button>
+  <button class="button" style="width:40%" bindtap="environment_data">
+  <image  class="image" src="https://img1.baidu.com/it/u=2953382451,4209765395&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+  湿温检测仪</button>
+
+  <button class="button" style="width:40%" bindtap='classification_management'>
+  <image class="image" src="https://img0.baidu.com/it/u=2055461506,4066326853&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+  分类计数仓</button>
+</view>
+
+<view class="verti">
+  <button class="button" style="width:40%" bindtap='systematic_management'>
+  <image  class="image"  src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F40%2F50%2F581326098ea88_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647262875&t=2ef052f5a28096a432d29ee2c9c07316"></image>
+   渔场监控室
+  </button>
+  <button class="button" style="width:40%" bindtap="urgent_management">
+  <image  class="image" src="https://img1.baidu.com/it/u=1383832961,1591742519&fm=253&fmt=auto&app=138&f=JPEG?w=256&h=256"></image>
+  紧急处理器</button>
+</view>
+
+<!-- 版本号 -->
+<view class="versionID">
+Version
+<text decode>&nbsp;&nbsp;</text>
 </view>
