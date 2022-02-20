@@ -1,1 +1,75 @@
 <view class="title">紧急处理器</view>
+
+<view class="condition">当前温度为:{{currentTemperature}} 建议温度:{{limitTemperature}}</view>
+<view class="condition">鱼群数量为:{{currentCapacity}} 最大容量:{{maxCapacity}}</view>
+<view class="condition">当前状态为：{{condition}}</view>
+<view class="danger">出现紧急情况时，请点击按钮拨打管理员电话！</view>
+<view><button class="button" bindtap="callManager">打电话</button></view>
+
+<view class="table" >
+ 
+ <view class="tab_th">
+
+     <view class="th_td1 th_text"><text>序号</text></view>
+
+     <view class="th_td2 th_text"><text>姓名</text></view>
+
+     <view class="th_td3 th_text"><text>工作时间</text></view>
+
+     <view class="th_td4 th_text"><text>备注</text></view>
+
+ </view>
+
+ <block >
+
+ <view class="tab_tr">
+
+     <view class="tr_td1 text"><text>1</text></view>
+
+     <view class="tr_td2 text"><text>张飞</text></view>
+
+     <view class="tr_td3 text"><text>周一，周二</text></view>
+
+     <view class="tr_td4 text"><text></text></view>
+
+ </view>
+
+ <view class="tab_tr">
+
+     <view class="tr_td1 text"><text>2</text></view>
+
+     <view class="tr_td2 text"><text>关羽</text></view>
+
+     <view class="tr_td3 text"><text>周三，周四</text></view>
+ 
+     <view class="tr_td4 text"><text></text></view>
+
+ </view>
+
+ <view class="tab_tr">
+
+     <view class="tr_td1 text"><text>3</text></view>
+
+     <view class="tr_td2 text"><text>刘备</text></view>
+
+     <view class="tr_td3 text"><text>周五，周六</text></view>
+
+     <view class="tr_td4 text"><text></text></view>
+
+ </view>
+ 
+ <view class="tab_tr">
+
+     <view class="tr_td1 text"><text>4</text></view>
+
+     <view class="tr_td2 text"><text>赵云</text></view>
+
+     <view class="tr_td3 text"><text>周日</text></view>
+
+     <view class="tr_td4 text"><text></text></view>
+
+ </view>
+
+</block>
+
+</view>
