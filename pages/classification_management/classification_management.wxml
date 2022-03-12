@@ -1,1 +1,32 @@
-<view class="title">分类技术仓</view>
+<view class="title">分类计数仓</view>
+<view class="info"> 
+<text class="underline">当前重量</text>
+<text decode>&nbsp;:&nbsp;</text>
+<!-- <text decode>&emsp;&emsp;&emsp;&emsp;</text> -->
+<text >{{weight}}</text>
+</view>
+
+<view class="test">
+  <view class="info" >
+   <text class="underline">鱼群分类</text>
+   <text decode>&nbsp;:&nbsp;</text>
+   <text class="underline">小鱼</text> <text>/</text>
+   <text class="underline">中鱼</text> <text>/</text>
+   <text class="underline">大鱼</text> 
+  </view>
+  <view class="icon">
+  <image bindtap="showStandard" src="http://zet-art.net/wp-content/uploads/2019/03/caution-01.png" style="right: 0%;height: 52px;width: 52px;"></image>
+  </view>
+</view>
+
+
+
+
+
+<view class="container">
+  <ec-canvas id="mychart-dom-line" style="width:100%;height:400px;margin-top:20px ;position: fixed;bottom: 10%;" canvas-id="mychart-columnar" ec="{{ ec }}">
+  <cover-view>test</cover-view>
+  </ec-canvas>
+</view>
+
+

@@ -1,5 +1,7 @@
 Page{
   background-color: #E0ECDE;
+  height: 100%;
+  width: 100%;
 }
 
 .title{
@@ -11,3 +13,63 @@ Page{
   margin-top: 0.2em;
   margin-bottom: 0.8em;
 }
+
+.canvas {
+  width: 100%;
+  height: 500rpx;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100rpx;
+  width: 800rpx;
+  position: fixed;
+}
+
+.underline{
+  border-style:hidden hidden solid hidden;
+  border-width: 6px;
+  border-color:#326f60;
+}
+
+.info{
+  text-align: left;
+  margin-top: 0.5em;
+  /* margin-bottom: 0.8em; */
+  font-family: "titlee","Time New Roman";
+  font-size: 1.8em;
+}
+
+.standard{
+  text-align: right;
+  text-decoration:underline,#326F60;
+}
+
+.test{
+  display: flex;
+  border-style:solid hidden hidden hidden;
+  border-width: 6px;
+  border-color:#E0ECDE;
+}
+
+.icon{
+  text-align: left;
+  margin-top: 0.5em;
+  /* margin-bottom: 0.8em; */
+  font-family: "titlee","Time New Roman";
+  font-size: 1.8em;
+}
+
+button{
+  height: 40px;
+  background-image: url(http://zet-art.net/wp-content/uploads/2019/03/caution-01.png);
+  background-size:52px 52px ;
+  background-color: transparent;
+}
+
+

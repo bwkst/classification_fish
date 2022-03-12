@@ -1,66 +1,91 @@
-// pages/classification_management/classification_management.js
+import * as echarts from '../../ec-canvas/echarts';
+
+const app = getApp();
+
+function initChart(canvas, width, height, dpr) {
+  const chart = echarts.init(canvas, null, {
+    width: width,
+    height: height,
+    devicePixelRatio: dpr // new
+  });
+  canvas.setChart(chart);
+
+  var option = {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: [
+      {
+        type: 'category',
+        data: ['小鱼', '中鱼', '大鱼',],
+        axisTick: { alignWithLabel: true},
+        axisLabel:{ fontSize:20 },
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        splitLine: {show: false },
+        axisLabel:{ show: false }, //显示x轴的数值
+        axisLine: {show:false},//轴线不显示
+        axisTick: {show:false},//
+      }
+    ],
+    series: [
+      {
+        color:'#2f4554',
+        name: 'Direct',
+        type: 'bar',
+        barWidth: '80%',
+        data: [39,60,28],
+        itemStyle: {
+          normal: {
+              label: {
+                  show: true,		//开启显示
+                  position: 'top',	//在上方显示
+                  textStyle: {	    //数值样式
+                      color: 'black',
+                      fontSize: 18
+                  }
+              }
+          }
+      }
+      }
+    ]
+  };
+
+  chart.setOption(option);
+  return chart;
+}
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    weight:'',
+    ec: {
+      onInit: initChart
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  onShow: function(){
+    this.setData({
+      weight:'45'+"公斤",
 
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  showStandard: function(){
+    wx.navigateTo({
+      url: '/pages/weight_standard/index',
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+});
