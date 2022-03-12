@@ -84,5 +84,10 @@ Page({
     wx.navigateTo({
       url: '/pages/urgent_management/urgent_management',
     })
-  }
+  },
+  systematic_management: function(){
+    wx.navigateTo({
+      url: '/pages/systematic_management/systematic_management',
+      })
+  },
 })
