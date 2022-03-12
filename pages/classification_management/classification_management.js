@@ -18,8 +18,8 @@ function initChart(canvas, width, height, dpr) {
       }
     },
     grid: {
-      left: '3%',
-      right: '4%',
+      left: '0%',
+      right: '6%',
       bottom: '3%',
       containLabel: true
     },
@@ -45,16 +45,16 @@ function initChart(canvas, width, height, dpr) {
         color:'#2f4554',
         name: 'Direct',
         type: 'bar',
-        barWidth: '80%',
+        barWidth: '97%',
         data: [39,60,28],
         itemStyle: {
           normal: {
               label: {
                   show: true,		//开启显示
-                  position: 'top',	//在上方显示
+                  position: 'inside',	//在内部显示
                   textStyle: {	    //数值样式
-                      color: 'black',
-                      fontSize: 18
+                      color: 'white',
+                      fontSize: 23
                   }
               }
           }
