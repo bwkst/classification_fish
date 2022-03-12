@@ -1,0 +1,108 @@
+/* pages/weight_standard/index.wxss */
+Page{
+  background-color: #e0ecde;
+  background-size: 120%,100%;
+}
+
+
+.title{
+  color:#326f60;
+  text-align: center;
+  line-height: 2.5em;
+  font-family: "titlee","Time New Roman";
+  font-size: 1.8em;
+  margin-top: 0.2em;
+  margin-bottom: 0.8em;
+}
+
+.test{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.standard{
+  width:70%;
+  margin-left: 15%;
+  height:58.6px;
+  justify-content: center;
+  border-style:solid;
+  border-width: 6px;
+  border-color:#326f60;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.size{
+  width:20%;
+  height: 100%;
+  border-style:hidden solid hidden hidden;
+  border-width: 6px;
+  border-color:#326f60;
+  font-size: 2.8em;
+}
+
+.weight1{
+  width:25%;
+  margin-left: 3%;
+  margin-top: 2.8%;
+  margin-bottom: 30px;
+  border-style:solid;
+  border-width: 6px;
+  border-color:#326f60;
+  font-size: 1.5em;
+}
+
+.weight2{
+  width:25%;
+  margin-left: 6%;
+  margin-top: 2.8%;
+  margin-bottom: 30px;
+  border-style:solid;
+  border-width: 6px;
+  border-color:#326f60;
+  font-size: 1.5em;
+}
+
+.tilde{
+  width:5%;
+  margin-left: 3%;
+  margin-top: 2.8%;
+  margin-bottom: 30px;
+  font-size: 1.9em;
+}
+
+.unit{
+  position: fixed;
+  text-align: right;
+  left: 0;
+  right: 0;
+  font-size: 1.5em;
+}
+
+.tabBar{
+  height: 80px;
+  position: fixed;
+  text-align: right;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  border-style:solid hidden hidden hidden;
+  border-width: 3px;
+  border-color:#326f60;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigate{
+  height: 80px;
+  font-size:1em; 
+  margin-top: 0.3em;
+  /* border-radius: 10px; */
+  line-height: 20px;
+  background-color: #90c8bd;
+  color: #264841;
+}
+

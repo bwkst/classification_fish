@@ -1,0 +1,44 @@
+<!--pages/weight_standard/index.wxml-->
+<view class="test"> 
+  <view class="title">标准详情</view>
+</view>
+
+<view class="standard">
+  <view style="display: flex;">
+    <view class="size">大</view>
+    <view class="weight1">56</view>
+    <view class="tilde">~</view>
+    <view class="weight2">89</view>
+  </view>
+</view>
+
+
+
+<view class="standard">
+  <view style="display: flex;">
+    <view class="size">中</view>
+    <view class="weight1">56</view>
+    <view class="tilde">~</view>
+    <view class="weight2">89</view>
+  </view>
+</view>
+
+<view class="standard">
+  <view style="display: flex;">
+    <view class="size">小</view>
+    <view class="weight1">56</view>
+    <view class="tilde">~</view>
+    <view class="weight2">89</view>
+  </view>
+</view>
+
+<view class="unit">（称重单位：KG）</view>
+
+<view class="tabBar" style="display: flex;">
+  <button class="navigate" style="width: 22%;" bindtap="environment_data">湿温检测仪</button>
+  <button class="navigate" style="width: 22%;" bindtap="classification_management">分类计数仓</button>
+  <button class="navigate" style="width: 22%;" bindtap="systematic_management">渔场监控室</button>
+  <button class="navigate" style="width: 22%;" bindtap="urgent_management">紧急处理器</button>
+
+</view>
+
