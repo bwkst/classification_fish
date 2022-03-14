@@ -24,7 +24,7 @@
 
 
 <view class="container">
-  <ec-canvas id="mychart-dom-line" style="width:100%;height:400px;margin-top:20px ;position: fixed;bottom: 10%;" canvas-id="mychart-columnar" ec="{{ ec }}">
+  <ec-canvas id="mychart-dom-columnar" style="width:100%;height:400px;margin-top:20px ;position: fixed;bottom: 10%;" canvas-id="mychart-columnar" ec="{{ ec }}">
   <cover-view>test</cover-view>
   </ec-canvas>
 </view>
