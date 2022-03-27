@@ -203,10 +203,37 @@
 }
 
 .ws_title{
-    color:#326F60;
+  color:#326F60;
   text-align: center;
   line-height: 1.5em;
   font-family: "Time New Roman";
   font-size: 1.7em;
   margin: 0.5em;
+}
+
+.center{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+}
+
+.select_right{
+  position: fixed;
+  right: 0%;
+  top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+}
+
+.select{
+  text-align: center;
+  line-height: 1;
+  padding: 5px 2px 5px 2px;
+  border: 1px solid #264841;
+  border-radius: 10px;
+  background-color: #90C8BD;
+  color: #264841;
 }

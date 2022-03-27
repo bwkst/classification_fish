@@ -99,8 +99,8 @@ Page({
     const environmentData = this.convert(datapoints);
 
     this.setData({
-      temperature:environmentData.temperature[0],
-      humidity:  environmentData.humidity[0],
+      temperature: environmentData.temperature[environmentData.length - 1],
+      humidity: environmentData.humidity[environmentData.length - 1],
     })
 
     this.lineChart_humidity.updateData({
@@ -129,13 +129,15 @@ Page({
     var humidity = [];
     var temperature = [];
 
-    var length = datapoints.humidity.length
+    var length = datapoints.temperature.length
     for (var i = 0; i < length; i++) {
       categories.push(datapoints.humidity[i].at.slice(5, 19));
       humidity.push(datapoints.humidity[i].value);
       temperature.push(datapoints.temperature[i].value);
     }
+
     return {
+      length: length,
       categories: categories,
       humidity: humidity,
       temperature: temperature,      

@@ -1,7 +1,7 @@
 <view class="ws_title">紧急处理器</view>
 
 <view class="urgent_standard">
-    <view>当前温度：{{temperature}}；建议温度：{{suggestTemperature}}</view>
+    <view>当前温度：{{temperature}}°C；建议温度：{{suggestTemperature}}°C</view>
     <view>小鱼池数量：{{small}}；其最大容量：{{smallMaxCapacity}}</view>
     <view>中鱼池数量：{{medium}}；其最大容量：{{mediumMaxCapacity}}</view>
     <view>大鱼池数量：{{large}}；其最大容量：{{largeMaxCapacity}}</view>
