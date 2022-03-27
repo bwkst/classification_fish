@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/environment_data/environment_data",
     "pages/systematic_management/systematic_management",
     "pages/urgent_management/urgent_management",
-    "pages/classification_management/classification_management"
+    "pages/classification_management/classification_management",
+    "pages/environment_data/environment_data",
+    "pages/weight_standard/weight_standard"
   ],
-  
   "window": {
     "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
@@ -16,6 +16,5 @@
     "enablePullDownRefresh": true
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "sitemapLocation": "sitemap.json"
 }

@@ -1,32 +1,46 @@
 <view class="title">分类计数仓</view>
-<view class="info"> 
-<text class="underline">当前重量</text>
-<text decode>&nbsp;:&nbsp;</text>
-<!-- <text decode>&emsp;&emsp;&emsp;&emsp;</text> -->
-<text >{{weight}}</text>
+
+<view class="contentBorder"> 
+  <text class="content">当前重量：</text>
+  <text class="content">{{weight}} (斤)</text>
 </view>
 
-<view class="test">
-  <view class="info" >
-   <text class="underline">鱼群分类</text>
-   <text decode>&nbsp;:&nbsp;</text>
-   <text class="underline">小鱼</text> <text>/</text>
-   <text class="underline">中鱼</text> <text>/</text>
-   <text class="underline">大鱼</text> 
+<view class="contentBorder">
+  <text class="content">鱼群分类：</text>
+  <text wx:if='{{fish_classify == "小鱼"}}' class="content">小鱼  </text>
+  <text wx:if='{{fish_classify == "中鱼"}}' class="content">中鱼  </text>
+  <text wx:if='{{fish_classify == "大鱼"}}' class="content">大鱼  </text>
+  <image class="reminderButton" src="../img/reminder.png" bindtap="weight_standard"></image>
+</view>
+
+<view class="stitle">鱼池数量图</view>
+
+<view class="verti">
+  <view class="fishcontainerBorder"> 
+    <view>小鱼池数量</view>
+    <view>{{small}}</view>
   </view>
-  <view class="icon">
-  <image bindtap="showStandard" src="http://zet-art.net/wp-content/uploads/2019/03/caution-01.png" style="right: 0%;height: 52px;width: 52px;"></image>
+  <view class="fishcontainerBorder"> 
+    <view>中鱼池数量</view>
+    <view>{{medium}}</view>
+  </view>
+  <view class="fishcontainerBorder"> 
+    <view>大鱼池数量</view>
+    <view>{{large}}</view>
   </view>
 </view>
 
-
-
-
-
-<view class="container">
-  <ec-canvas id="mychart-dom-columnar" style="width:100%;height:400px;margin-top:20px ;position: fixed;bottom: 10%;" canvas-id="mychart-columnar" ec="{{ ec }}">
-  <cover-view>test</cover-view>
-  </ec-canvas>
+<view class="navigationBar">
+  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+    <text class="navigate_buttontext">湿温 \n 检测仪</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+    <text class="navigate_buttontext">分类 \n  计数仓</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+    <text class="navigate_buttontext">渔场 \n 监控室</text>
+  </button>
+  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+    <text class="navigate_buttontext">紧急 \n 处理器</text>
+  </button>
 </view>
-
-

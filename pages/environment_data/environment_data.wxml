@@ -1,14 +1,44 @@
 <view class="title">湿温检测仪</view>
-<view class="verti">
-  <text class="sstitle" space='nbsp'>  实时温度  </text>
-  <text class="sstitle" space='nbsp'>  实时湿度  </text>
+
+<view class="contentBorder"> 
+  <text class="content">当前温度：</text>
+  <text class="content">{{temperature}}</text>
+  <text class="content"> °C</text>
 </view>
-<view class="verti">
-  <text class="content" space='nbsp'>     XX温度     </text>
-  <text class="content" space='nbsp'>     XX湿度     </text>
+
+<view class="contentBorder"> 
+  <text class="content">当前湿度：</text>
+  <text class="content">{{humidity}}</text>
+  <text class="content"> %</text>
 </view>
+
 <view class="stitle">变化曲线图</view>
-<view class="verti">
-  <view>图一</view>
-  <view>图二</view>
+
+<view class="verti_right">
+  <button class="filter" style="width: 50%;" bindtap="temperatureButton">
+    <text class="filter_text">温度</text>
+  </button>
+  <button class="filter" style="width: 50%;" bindtap="humidityButton">
+    <text class="filter_text">湿度</text>
+  </button>
+</view>
+
+<view>
+  <canvas wx:if='{{statusButton == "湿度"}}' class = "canvas" id="chart1" canvas-id="humidity"></canvas>
+  <canvas wx:elif='{{statusButton == "温度"}}' class = "canvas" id="chart3" canvas-id="temperature"></canvas>
+</view>
+
+<view class="navigationBar">
+  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+    <text class="navigate_buttontext">湿温 \n 检测仪</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+    <text class="navigate_buttontext">分类 \n  计数仓</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+    <text class="navigate_buttontext">渔场 \n 监控室</text>
+  </button>
+  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+    <text class="navigate_buttontext">紧急 \n 处理器</text>
+  </button>
 </view>

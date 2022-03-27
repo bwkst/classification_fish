@@ -1,15 +1,22 @@
 {
   "description": "项目配置文件",
   "packOptions": {
-    "ignore": []
+    "ignore": [
+      {
+        "type": "file",
+        "value": ".eslintrc.js"
+      }
+    ]
   },
   "setting": {
+    "bundle": false,
+    "userConfirmedBundleSwitch": false,
     "urlCheck": true,
     "scopeDataCheck": false,
     "coverView": true,
-    "es6": false,
+    "es6": true,
     "postcss": true,
-    "compileHotReLoad": false,
+    "compileHotReLoad": true,
     "lazyloadPlaceholderEnable": false,
     "preloadBackgroundData": false,
     "minified": true,
@@ -17,7 +24,7 @@
     "newFeature": false,
     "uglifyFileName": false,
     "uploadWithSourceMap": true,
-    "useIsolateContext": false,
+    "useIsolateContext": true,
     "nodeModules": false,
     "enhance": true,
     "useMultiFrameRuntime": true,
@@ -25,22 +32,25 @@
     "useApiHostProcess": true,
     "showShadowRootInWxmlPanel": true,
     "packNpmManually": false,
+    "enableEngineNative": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "disableUseStrict": false,
+    "showES6CompileOption": false,
     "minifyWXML": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.22.0",
+  "libVersion": "2.19.4",
   "appid": "wxeb59970bba320a72",
-  "projectname": "%E5%85%A8%E8%87%AA%E5%8A%A8%E7%A7%B0%E9%87%8D%E5%88%86%E9%B1%BC_2",
+  "projectname": "0.0.1",
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
+  "staticServerOptions": {
+    "baseURL": "",
+    "servePath": ""
+  },
   "isGameTourist": false,
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
       "list": []

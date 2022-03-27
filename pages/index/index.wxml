@@ -1,55 +1,32 @@
-<!-- index.wxml -->
-<view class="title">称重分鱼自动管理系统
-<text>\n</text>
+<view class="index_title">称重分鱼自动管理系统</view>
+
+<view class="index_row">
+  
+  <button class="index_button" bindtap="environment_data">
+    <image class="index_image" src="../img/EM.png"></image>
+    <view class = "index_buttontext">湿温检测仪</view>
+  </button>
+
+  <button class="index_button" bindtap='classification_management'>
+    <image class="index_image" src="../img/CM.png"></image>
+    <view class = "index_buttontext">分类计数仓</view>
+  </button>
+
 </view>
 
+<view class="index_row">
 
-<!-- 滑动的图片 -->
-<!-- <view>
-  <swiper class="swiper" autoplay="true" interval="2000" >
-    <swiper-item>
-      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2F50%2Fv2-a7880a499be8a82f6468f638d3c45635_hd.jpg&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646896958&t=6badf8616d9e18a4c9660f0d63d7eab7"></image>
-    </swiper-item>
- 
-  </swiper>
-</view> -->
-
-<view class="verti">
-  <button class="button" style="width:40%" bindtap="environment_data">
-    <image  class="image" src="https://img.599ku.com/element_min_new_pic/18/88/60/29/2092e6fbbcdbc06ccdba1c5b8c20aa97.png"></image>
-    <text>\n</text>
-    湿温检测仪
+  <button class="index_button" bindtap='systematic_management'>
+    <image class="index_image"  src="../img/SM.png"></image>
+    <view class = "index_buttontext">渔场监控室</view>
   </button>
 
-  <button class="button" style="width:40%" bindtap='classification_management'>
-    <image class="image" src="https://www.amha-net.com/html/plugin/assets/img/sky01.png"></image>
-    <text>\n</text>
-    分类计数仓
+  <button class="index_button" bindtap="urgent_management">
+    <image class="index_image" src="../img/UM.png"/>
+    <view class = "index_buttontext">紧急处理器</view>
   </button>
-</view>
-
-<view class="verti">
-  <button class="button" style="width:40%" bindtap='systematic_management'>
-    <image  class="image"  src="https://marketplace.canva.cn/P0COU/MAB3ugP0COU/2/tl/canva-%E8%93%9D%E8%89%B2%E7%94%B5%E8%84%91%E5%B1%8F%E5%B9%95%E8%93%9D%E8%89%B2%E7%94%B5%E8%84%91%E5%B1%8F%E5%B9%95-blue-computer-screen-blue-computer-screen-MAB3ugP0COU.png"></image>
-    <text>\n</text>
-    渔场监控室
-  </button>
-
-  <button class="button" style="width:40%" bindtap="urgent_management">
-    <image  class="image" src="https://tse1-mm.cn.bing.net/th/id/R-C.bc8871a531037a905607791c9981d484?rik=5JLI63N3cD4NxQ&riu=http%3a%2f%2fzsucai.com%2ffiles%2f2013%2f0615%2f130615543313830%2fzsucai1306153934196.png&ehk=cPHDe2GnkOQbe6ikPDvaxni0SMCzhenJwL8NnEvfEx4%3d&risl=&pid=ImgRaw&r=0"></image>
-    <text>\n</text>
-    紧急处理器
-  </button>
+  
 </view>
 
 <!-- 版本号 -->
-<view class="versionID">
-Version
-<text decode>&nbsp;&nbsp;</text>
-</view>
+<view class="index_versionID">Version 1.0.0</view>

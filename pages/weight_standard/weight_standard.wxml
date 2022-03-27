@@ -1,0 +1,32 @@
+<view class="ws_title">标准详情</view>
+
+<view class="contentBorder content">小鱼：{{maxSmall}}斤 {{minSmall}}</view>
+<view class="contentBorder content">中鱼：{{minMedium}}斤 ~ {{maxMedium}}斤</view>
+<view class="contentBorder content">大鱼：{{minLarge}}斤 {{maxLarge}}</view>
+
+<view class="reminder">水的重量：{{waterInLitre}}升 / {{waterWeight}}斤</view>
+
+<view class="contentBorder content">
+  小鱼 & 水：{{maxSmall + waterWeight}}斤 {{minSmall}}
+</view>
+<view class="contentBorder content">
+  中鱼 & 水：{{minMedium + waterWeight}}斤 ~ {{maxMedium + waterWeight}}斤
+</view>
+<view class="contentBorder content">
+  大鱼 & 水：{{minLarge  + waterWeight}}斤 {{maxLarge}}
+</view>
+
+<view class="navigationBar">
+  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+    <text class="navigate_buttontext">湿温 \n 检测仪</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+    <text class="navigate_buttontext">分类 \n  计数仓</text>
+  </button>
+  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+    <text class="navigate_buttontext">渔场 \n 监控室</text>
+  </button>
+  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+    <text class="navigate_buttontext">紧急 \n 处理器</text>
+  </button>
+</view>

@@ -1,13 +1,3 @@
 Page{
   background-color: #E0ECDE;
 }
-
-.title{
-  color: #326F60;
-  text-align: center;
-  line-height: 2.5em;
-  font-family: "Time New Roman";
-  font-size: 1.8em;
-  margin-top: 0.2em;
-  margin-bottom: 0.8em;
-}
