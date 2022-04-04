@@ -15,32 +15,35 @@
 
 <view class="stitle">鱼池数量图</view>
 
-<view class="verti">
-  <view class="fishcontainerBorder"> 
-    <view>小鱼池数量</view>
-    <view>{{small}}</view>
+<view class="cm_verti">
+  <view class="fishContainerBorder"> 
+    <text>小鱼池 \n</text>
+    <text>数量 \n \n </text>
+    <text>{{small}}</text>
   </view>
-  <view class="fishcontainerBorder"> 
-    <view>中鱼池数量</view>
-    <view>{{medium}}</view>
+  <view class="fishContainerBorder"> 
+    <text>中鱼池 \n </text>
+    <text>数量 \n  \n </text>
+    <text>{{medium}}</text>
   </view>
-  <view class="fishcontainerBorder"> 
-    <view>大鱼池数量</view>
-    <view>{{large}}</view>
+  <view class="fishContainerBorder"> 
+    <text>大鱼池 \n </text>
+    <text>数量 \n  \n </text>
+    <text>{{large}}</text>
   </view>
 </view>
 
 <view class="navigationBar">
-  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
     <text class="navigate_buttontext">湿温 \n 检测仪</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
     <text class="navigate_buttontext">分类 \n  计数仓</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
     <text class="navigate_buttontext">渔场 \n 监控室</text>
   </button>
-  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急 \n 处理器</text>
   </button>
 </view>

@@ -1,3 +1,48 @@
 Page{
   background-color: #E0ECDE;
 }
+
+.index_title{
+  color: #326F60;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: "Time New Roman";
+  font-size: 55rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.index_button{
+  width: 340rpx;
+  margin: 75rpx;
+  padding: 38rpx;
+  box-sizing: border-box;
+  height: fit-content;
+  border: 2rpx solid #000000;
+  border-radius: 30rpx;
+  background-color: #90C8BD;
+}
+
+.index_image{
+  width: 90rpx;
+  height: 90rpx;
+  align-items: center;
+}
+
+.index_buttontext{
+  font-family: "Time New Roman";
+  font-size: 38rpx;
+  color: #264841;
+}
+
+.index_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.index_versionID {
+  position: fixed;
+  bottom: 38rpx;
+  right: 38rpx;
+}

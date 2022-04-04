@@ -16,3 +16,18 @@ Page{
   top: 50px;
   padding: 30px;
 }
+
+.ed_select{
+  border: 1rpx solid #264841;
+  border-radius: 5rpx;
+  background-color: #90C8BD;
+  color: #264841;
+  height: fit-content;
+}
+
+.ed_right{
+  position: fixed;
+  right: 0rpx;
+  top: 575rpx;
+  display: flex;
+}

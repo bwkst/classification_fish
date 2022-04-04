@@ -1,3 +1,27 @@
 Page{
   background-color: #E0ECDE;
 }
+
+.reminderButton{
+  width: 40rpx;
+  height: 35rpx;
+  align-items: right;
+}
+
+.cm_verti{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fishContainerBorder{
+  color: #326F60;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: "Time New Roman";
+  font-size: 36rpx;
+  margin: 30rpx;
+  padding: 20rpx;
+  border: 4rpx solid #90C8BD;
+  border-radius: 10rpx;
+}

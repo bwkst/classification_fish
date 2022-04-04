@@ -1,3 +1,55 @@
 Page{
   background-color: #E0ECDE;
 }
+
+.um_title{
+  color:#326F60;
+  text-align: center;
+  line-height: 40rpx;
+  font-family: "Time New Roman";
+  font-size: 55rpx;
+  margin: 50rpx 20rpx 20rpx 20rpx ;
+}
+
+.urgent_standard{
+  color: #326F60;
+  line-height: 70rpx;
+  font-family: "Time New Roman";
+  font-size: 30rpx;
+  padding: 20rpx 45rpx 20rpx 45rpx;
+  margin: 75rpx;
+  border: 4rpx solid #90C8BD;
+  border-radius: 10rpx;
+}
+
+.urgent_status{
+  color: #326F60;
+  text-align: center;
+  line-height: 50rpx;
+  font-family: "Time New Roman";
+  font-size: 36rpx;
+  padding: 10rpx;
+  margin: 75rpx;
+  border: 4rpx solid #90C8BD;
+  border-radius: 10rpx;
+}
+
+.reminder{
+  color: #326F60;
+  text-align: center;
+  font-family: "Time New Roman";
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.phoneButton{
+  align-items: center;
+  font-family: "Time New Roman";
+  font-size: 36rpx;
+  line-height: 45rpx;
+  padding: 10rpx;
+  border-radius: 25rpx;
+  background-color: #90C8BD;
+  color: #264841;
+  margin-top: 50rpx;
+}

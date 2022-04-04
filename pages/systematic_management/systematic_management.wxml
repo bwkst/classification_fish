@@ -1,47 +1,47 @@
 <view class="title">鱼场监控室</view>
 
-<view class="select_right">
-  <button class="select" style="width: 25%;" bindtap="wholeButton">
+<view class="sm_right">
+  <button class="sm_select" style="width: 110rpx;" bindtap="wholeButton">
     <text class="filter_text">未分类</text>
   </button>
-  <button class="select" style="width: 25%;" bindtap="smallButton">
+  <button class="sm_select" style="width: 110rpx;" bindtap="smallButton">
     <text class="filter_text">小鱼池</text>
   </button>
-  <button class="select" style="width: 25%;" bindtap="mediumButton">
+  <button class="sm_select" style="width: 110rpx;" bindtap="mediumButton">
     <text class="filter_text">中鱼池</text>
   </button>
-  <button class="select" style="width: 25%;" bindtap="largeButton">
+  <button class="sm_select" style="width: 110rpx;" bindtap="largeButton">
     <text class="filter_text">大鱼池</text>
   </button>
 </view>
 
-<view wx:if='{{selectStatus == "normal"}}' class="center" style="width: 100%;" >
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/classify.mp4" style="width: 80%;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
+<view wx:if='{{selectStatus == "normal"}}' class="video" style="width: 600rpx;" >
+  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
 </view>
 
-<view wx:elif='{{selectStatus == "large"}}' class="center" style="width: 100%;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/large.mp4" style="width: 80%;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
+<view wx:elif='{{selectStatus == "large"}}' class="video" style="width: 600rpx;">
+  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/large.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
 </view>
 
-<view wx:elif='{{selectStatus == "medium"}}' class="center"  style="width: 100%;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/medium.mp4" style="width: 80%;" autoplay="true" muted="true" loop="ture"></video>
+<view wx:elif='{{selectStatus == "medium"}}' class="video"  style="width: 600rpx;">
+  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/medium.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture"></video>
 </view>
 
-<view wx:elif='{{selectStatus == "small"}}' class="center" style="width: 100%;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/small.mp4" style="width: 80%;" autoplay="true" muted="true" loop="ture"></video>
+<view wx:elif='{{selectStatus == "small"}}' class="video" style="width: 600rpx;">
+  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture"></video>
 </view>
 
 <view class="navigationBar">
-  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
     <text class="navigate_buttontext">湿温 \n 检测仪</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
     <text class="navigate_buttontext">分类 \n  计数仓</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
     <text class="navigate_buttontext">渔场 \n 监控室</text>
   </button>
-  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急 \n 处理器</text>
   </button>
 </view>

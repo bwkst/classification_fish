@@ -14,11 +14,11 @@
 
 <view class="stitle">变化曲线图</view>
 
-<view class="verti_right">
-  <button class="filter" style="width: 50%;" bindtap="temperatureButton">
+<view class="ed_right">
+  <button class="ed_select" style="width: 150rpx;" bindtap="temperatureButton">
     <text class="filter_text">温度</text>
   </button>
-  <button class="filter" style="width: 50%;" bindtap="humidityButton">
+  <button class="ed_select" style="width: 150rpx;" bindtap="humidityButton">
     <text class="filter_text">湿度</text>
   </button>
 </view>
@@ -29,16 +29,16 @@
 </view>
 
 <view class="navigationBar">
-  <button class="navigationButton" style="width: 30%;" bindtap="environment_data">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
     <text class="navigate_buttontext">湿温 \n 检测仪</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="classification_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
     <text class="navigate_buttontext">分类 \n  计数仓</text>
   </button>
-  <button class="navigationButton" style="width: 100px;" bindtap="systematic_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
     <text class="navigate_buttontext">渔场 \n 监控室</text>
   </button>
-  <button class="navigationButton" style="width: 30%;" bindtap="urgent_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急 \n 处理器</text>
   </button>
 </view>

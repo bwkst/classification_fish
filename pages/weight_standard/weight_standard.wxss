@@ -1,3 +1,38 @@
 Page{
   background-color: #E0ECDE;
 }
+
+.ws_title{
+  color:#326F60;
+  text-align: center;
+  line-height: 30rpx;
+  font-family: "Time New Roman";
+  font-size: 50rpx;
+  margin: 65rpx 20rpx 65rpx 20rpx ;
+}
+
+.standard_content{
+  color: #326F60;
+  text-align: center;
+  width: 450rpx;
+  line-height: 60rpx;
+  font-family: "Time New Roman";
+  font-size: 32rpx;
+  margin: 40rpx 150rpx 40rpx 150rpx;
+  padding: 10rpx;
+  border: 4rpx solid #90C8BD;
+  border-radius: 10rpx;
+}
+
+.standard_remainder{
+  color: #326F60;
+  text-align: center;
+  width: 575rpx;
+  line-height: 40rpx;
+  font-family: "Time New Roman";
+  font-size: 38rpx;
+  margin: 40rpx 100rpx 40rpx 100rpx;
+  padding: 10rpx;
+  border: 4rpx dashed #326F60;
+  border-radius: 10rpx;
+}
