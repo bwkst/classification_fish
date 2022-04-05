@@ -22,8 +22,8 @@
 .navigationBar{
   position: fixed;
   bottom: 0rpx;
-  right: 5rpx;
-  left: 5rpx;
+  right: 10rpx;
+  left: 10rpx;
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -11,7 +11,7 @@ Page{
 
 .sm_right{
   position: fixed;
-  right: 0rpx;
+  right: 15rpx;
   top: 180rpx;
   display: flex;
   flex-direction: row;

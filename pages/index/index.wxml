@@ -2,12 +2,12 @@
 
 <view class="index_row">
   
-  <button class="index_button" bindtap="environment_data">
+  <button class="index_button" bindtap="environment_data" style="width: 300rpx;">
     <image class="index_image" src="../img/EM.png"></image>
     <view class = "index_buttontext">湿温检测仪</view>
   </button>
 
-  <button class="index_button" bindtap='classification_management'>
+  <button class="index_button" bindtap='classification_management' style="width: 300rpx;">
     <image class="index_image" src="../img/CM.png"></image>
     <view class = "index_buttontext">分类计数仓</view>
   </button>
@@ -16,12 +16,12 @@
 
 <view class="index_row">
 
-  <button class="index_button" bindtap='systematic_management'>
+  <button class="index_button" bindtap='systematic_management' style="width: 300rpx;">
     <image class="index_image"  src="../img/SM.png"></image>
     <view class = "index_buttontext">渔场监控室</view>
   </button>
 
-  <button class="index_button" bindtap="urgent_management">
+  <button class="index_button" bindtap="urgent_management" style="width: 300rpx;">
     <image class="index_image" src="../img/UM.png"/>
     <view class = "index_buttontext">紧急处理器</view>
   </button>

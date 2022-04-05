@@ -4,17 +4,17 @@ Page{
 
 .canvas{
   width: 100%;
-  height: 800px;
+  height: 350rpx;
 }
 
 #chart1{
-  top: 50px;
-  padding: 30px;
+  top: 50rpx;
+  padding: 30rpx;
 }
 
 #chart3{
-  top: 50px;
-  padding: 30px;
+  top: 50rpx;
+  padding: 30rpx;
 }
 
 .ed_select{
@@ -27,7 +27,7 @@ Page{
 
 .ed_right{
   position: fixed;
-  right: 0rpx;
+  right: 15rpx;
   top: 575rpx;
   display: flex;
 }
