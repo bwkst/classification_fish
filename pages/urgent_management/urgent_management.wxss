@@ -6,7 +6,7 @@ Page{
   color:#326F60;
   text-align: center;
   line-height: 40rpx;
-  font-family: "Time New Roman";
+  font-family: "main_title";
   font-size: 55rpx;
   margin: 50rpx 20rpx 20rpx 20rpx ;
 }

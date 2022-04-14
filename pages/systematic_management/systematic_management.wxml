@@ -1,4 +1,4 @@
-<view class="title">鱼场监控室</view>
+<view class="title">渔场监控室</view>
 
 <view class="sm_right">
   <button class="sm_select" style="width: 110rpx;" bindtap="wholeButton">

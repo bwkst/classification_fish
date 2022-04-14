@@ -22,6 +22,18 @@ Page({
     wx.navigateTo({
       url: '/pages/urgent_management/urgent_management',
       })
+  },
+
+  order_management: function(){
+    wx.navigateTo({
+      url: '/pages/order_management/order_management',
+      })
+  },
+
+  communication_center: function(){
+    wx.navigateTo({
+      url: '/pages/communication_center/communication_center',
+    })
   }
   
 })
