@@ -1,32 +1,31 @@
-<view class="index_title">称重分鱼自动管理系统</view>
+<view class="index_title">商户版渔场管理系统</view>
 
-<view class="index_row">
-  
-  <button class="index_button" bindtap="environment_data" style="width: 300rpx;">
-    <image class="index_image" src="../img/EM.png"></image>
-    <view class = "index_buttontext">湿温检测仪</view>
+<scroll-view scroll-y>
+  <button class="index_button_major ib_1" bindtap="environment_data" style="width: 600rpx;">
+    <image class="index_image ii_1" src="../img/EM.png" style="align-items: right;"></image>
+    <text class = "index_buttontext">湿温检测仪</text>
   </button>
 
-  <button class="index_button" bindtap='classification_management' style="width: 300rpx;">
-    <image class="index_image" src="../img/CM.png"></image>
-    <view class = "index_buttontext">分类计数仓</view>
+  <button class="index_button_major ib_2" bindtap='classification_management' style="width: 600rpx;">   
+    <text class = "index_buttontext">分类计数仓</text>
+    <image class="index_image ii_2" src="../img/CM.png"></image>
   </button>
 
-</view>
-
-<view class="index_row">
-
-  <button class="index_button" bindtap='systematic_management' style="width: 300rpx;">
-    <image class="index_image"  src="../img/SM.png"></image>
-    <view class = "index_buttontext">渔场监控室</view>
+  <button class="index_button_major ib_1" bindtap='systematic_management' style="width: 600rpx;">
+    <image class="index_image ii_1"  src="../img/SM.png"></image>
+    <text class = "index_buttontext">渔场监控室</text>
   </button>
 
-  <button class="index_button" bindtap="urgent_management" style="width: 300rpx;">
-    <image class="index_image" src="../img/UM.png"/>
-    <view class = "index_buttontext">紧急处理器</view>
+  <button class="index_button_major ib_2" bindtap="urgent_management" style="width: 600rpx;">
+    <text class = "index_buttontext">紧急处理器</text>
+    <image class="index_image ii_2" src="../img/UM.png"/>
   </button>
-  
-</view>
+
+
+  <button class="index_button_major ib_3" bindtap="urgent_management" style="width: 600rpx;">
+    <text class = "index_buttontext">订单管理</text>
+  </button>
+</scroll-view>
 
 <!-- 版本号 -->
 <view class="index_versionID">Version 1.0.0</view>

@@ -7,38 +7,94 @@ Page{
   text-align: center;
   line-height: 80rpx;
   font-family: "Time New Roman";
-  font-size: 55rpx;
+  font-size: 56rpx;
   margin-top: 50rpx;
-  margin-bottom: 50rpx;
-}
-
-.index_button{
-  width: 340rpx;
-  margin: 75rpx;
-  padding: 38rpx;
-  box-sizing: border-box;
-  height: fit-content;
-  border: 2rpx solid #000000;
-  border-radius: 30rpx;
-  background-color: #90C8BD;
-}
-
-.index_image{
-  width: 90rpx;
-  height: 90rpx;
-  align-items: center;
-}
-
-.index_buttontext{
-  font-family: "Time New Roman";
-  font-size: 38rpx;
-  color: #264841;
+  margin-bottom: 20rpx;
 }
 
 .index_row{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.index_button_major{
+  width: 600rpx;
+  margin: 40rpx;
+  padding: 70rpx;
+  box-sizing: border-box;
+  height: 200rpx;
+}
+
+.ib_1{
+  background: linear-gradient(45deg, #90C8BD 20%, #292cca);    
+  clip-path: polygon(        
+    100% 100%,        
+    100% 50%,       
+    100% 0,        
+    0 0,        
+    0 50%,        
+    0 100%    
+  );
+}
+
+.ib_2{
+  background: linear-gradient(400deg, #90C899, #90C8BD);    
+  clip-path: polygon(        
+    0 0,        
+    0rpx 50%,       
+    0 100%,        
+    100% 100%,        
+    100% 50%,        
+    100% 0    
+  );
+}
+
+.ib_3{
+  background: linear-gradient(400deg, #9890c8, #90b6c8);    
+  clip-path: polygon(        
+    0 0,        
+    0rpx 50%,       
+    0 100%,        
+    100% 100%,        
+    100% 50%,        
+    100% 0    
+  );
+}
+
+.index_image{
+  width: 120rpx;
+  height: 120rpx;
+  align-items: center;
+}
+
+.ii_1{
+  position: absolute;	
+  left: 5%;
+  bottom: 20%;
+}
+
+.ii_2{
+  position: absolute;	
+  right: 5%;
+  bottom: 20%;
+}
+
+.index_buttontext{
+  font-family: "Time New Roman";
+  font-size: 48rpx;
+  color: #264841;
+}
+
+.index_button_order{
+  width: 300rpx;
+  margin: 50rpx;
+  padding: 35rpx;
+  box-sizing: border-box;
+  height: fit-content;
+  border: 2rpx solid #264841;
+  border-radius: 100rpx;
+  background-color: #90C8BD;
 }
 
 .index_versionID {
