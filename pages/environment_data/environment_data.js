@@ -4,9 +4,9 @@ const api_key = "E=0WdCeJBKGsORZhFxGGW0iaY2Q=" // Api-key
 
 Page({
   data: {
-    temperature: "暂无数据",
-    humidity: "暂无数据",
-    statusButton: "暂无数据"
+    temperature: "无数据",
+    humidity: "无数据",
+    statusButton: "无数据"
   },
 
   temperatureButton: function(){

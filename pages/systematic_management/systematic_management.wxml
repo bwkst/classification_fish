@@ -32,16 +32,16 @@
 </view>
 
 <view class="navigationBar">
-  <button class="navigationButton" style="width: 182rpx;" bindtap="environment_data">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
     <text class="navigate_buttontext">湿温 \n 检测仪</text>
   </button>
-  <button class="navigationButton" style="width: 182rpx;" bindtap="classification_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
     <text class="navigate_buttontext">分类 \n  计数仓</text>
   </button>
-  <button class="navigationButton" style="width: 182rpx;" bindtap="systematic_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
     <text class="navigate_buttontext">渔场 \n 监控室</text>
   </button>
-  <button class="navigationButton" style="width: 182rpx;" bindtap="urgent_management">
+  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急 \n 处理器</text>
   </button>
 </view>
