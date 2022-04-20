@@ -1,20 +1,16 @@
 <view class="ws_title">标准详情</view>
 
-<view class="standard_content">小鱼：{{maxSmall}}斤 {{minSmall}}</view>
-<view class="standard_content">中鱼：{{minMedium}}斤 ~ {{maxMedium}}斤</view>
-<view class="standard_content">大鱼：{{minLarge}}斤 {{maxLarge}}</view>
-
-<view class="standard_remainder">水的重量：{{waterInLitre}}升 / {{waterWeight}}斤</view>
-
-<view class="standard_content">
-  小鱼 & 水：{{maxSmall + waterWeight}}斤 {{minSmall}}
-</view>
-<view class="standard_content">
-  中鱼 & 水：{{minMedium + waterWeight}}斤 ~ {{maxMedium + waterWeight}}斤
-</view>
-<view class="standard_content">
-  大鱼 & 水：{{minLarge  + waterWeight}}斤 {{maxLarge}}
-</view>
+<scroll-view scroll-y>
+  <view class="ws_border">
+    <view class="ws_content">小鱼：{{maxSmall}}斤{{minSmall}}</view>
+    <view class="ws_content">中鱼：{{minMedium}}斤 ~ {{maxMedium}}斤</view>
+    <view class="ws_content">大鱼：{{minLarge}}.0斤{{maxLarge}}</view>
+    <view class="ws_remainder">水的重量：{{waterInLitre}}升 / {{waterWeight}}斤</view>
+    <view class="ws_content">小鱼 & 水：{{maxSmall + waterWeight}}斤{{minSmall}}</view>
+    <view class="ws_content">中鱼 & 水：{{minMedium + waterWeight}} ~ {{maxMedium + waterWeight}} 斤</view>
+    <view class="ws_content">大鱼 & 水：{{minLarge + waterWeight}}斤{{maxLarge}}</view>
+  </view>
+</scroll-view>
 
 <view class="navigationBar">
   <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">

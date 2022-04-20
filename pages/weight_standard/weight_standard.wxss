@@ -8,31 +8,40 @@ Page{
   line-height: 30rpx;
   font-family: "main_title";
   font-size: 50rpx;
-  margin: 65rpx 20rpx 65rpx 20rpx ;
+  margin: 65rpx 20rpx 20rpx 20rpx ;
 }
 
-.standard_content{
+.ws_border{
   color: #326F60;
   text-align: center;
-  width: 450rpx;
-  line-height: 60rpx;
-  font-family: "Time New Roman";
-  font-size: 32rpx;
-  margin: 40rpx 150rpx 40rpx 150rpx;
-  padding: 10rpx;
+  width: 600rpx;
+  padding: 10rpx 0rpx 10rpx 0rpx;
+  margin: 50rpx 75rpx 50rpx 75rpx;
+  line-height: fit-content;
   border: 4rpx solid #90C8BD;
   border-radius: 10rpx;
 }
 
-.standard_remainder{
+.ws_content{
   color: #326F60;
   text-align: center;
-  width: 575rpx;
-  line-height: 40rpx;
-  font-family: "Time New Roman";
+  margin: 40rpx 15rpx 40rpx 15rpx;
+  width: 540rpx;
+  line-height: fit-content;
+  font-family: "ws_font";
   font-size: 38rpx;
-  margin: 40rpx 100rpx 40rpx 100rpx;
-  padding: 10rpx;
+  padding: 15rpx 10rpx 15rpx 10rpx;
+}
+
+.ws_remainder{
+  color: #326F60;
+  text-align: center;
+  margin: 40rpx 15rpx 40rpx 15rpx;
+  width: 540rpx;
+  line-height: fit-content;
+  font-family: "ws_font";
+  font-size: 38rpx;
+  padding: 15rpx 10rpx 15rpx 10rpx;
   border: 4rpx dashed #326F60;
   border-radius: 10rpx;
 }
