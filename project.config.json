@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wxeb59970bba320a72",
-  "projectname": "0.0.1",
+  "projectname": "classification_fish",
   "debugOptions": {
     "hidedInDevtools": []
   },
