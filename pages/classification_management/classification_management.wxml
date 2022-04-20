@@ -1,25 +1,27 @@
 <view class="title">分类计数仓</view>
 
-<view class="contentBorder"> 
-  <text class="content" style="font-size: 42rpx;">当前重量：</text>
-  <text class="content" style="font-size: 42rpx;">{{weight}} (斤)</text>
-</view>
+<scroll-view scroll-y>
+  <view class="contentBorder"> 
+    <text class="content" style="font-size: 42rpx;">当前重量：</text>
+    <text class="content" style="font-size: 42rpx;">{{weight}} (斤)</text>
+  </view>
 
-<view class="contentBorder">
-  <text class="content" style="font-size: 42rpx;">鱼群分类：</text>
-  <text wx:if='{{fish_classify == "小鱼"}}' class="content" style="font-size: 42rpx;">小鱼</text>
-  <text wx:if='{{fish_classify == "中鱼"}}' class="content" style="font-size: 42rpx;">中鱼</text>
-  <text wx:if='{{fish_classify == "大鱼"}}' class="content" style="font-size: 42rpx;">大鱼</text>
-  <image class="standardButton" src="../img/reminder.png" bindtap="weight_standard"></image>
-</view>
+  <view class="contentBorder">
+    <text class="content" style="font-size: 42rpx;">鱼群分类：</text>
+    <text wx:if='{{fish_classify == "小鱼"}}' class="content" style="font-size: 42rpx;">小鱼</text>
+    <text wx:if='{{fish_classify == "中鱼"}}' class="content" style="font-size: 42rpx;">中鱼</text>
+    <text wx:if='{{fish_classify == "大鱼"}}' class="content" style="font-size: 42rpx;">大鱼</text>
+    <image class="standardButton" src="../img/reminder.png" bindtap="weight_standard"></image>
+  </view>
 
-<view class="stitle">鱼池数量图</view>
+  <view class="stitle">鱼池数量图</view>
 
-<view>
-  <view class="fishContainerBorder" style="width: {{200 + small * 15}}rpx">小鱼池：{{small}}</view>
-  <view class="fishContainerBorder" style="width: {{200 + medium * 15}}rpx">中鱼池：{{medium}}</view>
-  <view class="fishContainerBorder" style="width: {{200 + large * 15}}rpx">大鱼池：{{large}}</view>
-</view>
+  <view>
+    <view class="fishContainerBorder" style="width: {{200 + small * 15}}rpx">小鱼池：{{small}}</view>
+    <view class="fishContainerBorder" style="width: {{200 + medium * 15}}rpx">中鱼池：{{medium}}</view>
+    <view class="fishContainerBorder" style="width: {{200 + large * 15}}rpx">大鱼池：{{large}}</view>
+  </view>
+</scroll-view>
 
 <view class="navigationBar">
   <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
