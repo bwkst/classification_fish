@@ -33,7 +33,7 @@ Page{
   padding: 15rpx 10rpx 15rpx 10rpx;
 }
 
-.ws_remainder{
+.ws_reminder{
   color: #326F60;
   text-align: center;
   margin: 40rpx 15rpx 40rpx 15rpx;

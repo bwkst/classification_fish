@@ -1,35 +1,41 @@
 <view class="title">渔场监控室</view>
 
-<view class="sm_right">
-  <button class="sm_select" style="width: 110rpx;" bindtap="wholeButton">
-    <text class="filter_text">未分类</text>
-  </button>
-  <button class="sm_select" style="width: 110rpx;" bindtap="smallButton">
-    <text class="filter_text">小鱼池</text>
-  </button>
-  <button class="sm_select" style="width: 110rpx;" bindtap="mediumButton">
-    <text class="filter_text">中鱼池</text>
-  </button>
-  <button class="sm_select" style="width: 110rpx;" bindtap="largeButton">
-    <text class="filter_text">大鱼池</text>
-  </button>
-</view>
+<scroll-view scroll-y>
+  <view class="sm_row">
+    <button class="sm_button_major" bindtap="wholeButton" style="width: 125rpx;" >
+      <text class="filter_text">未分类</text>
+    </button>
 
-<view wx:if='{{selectStatus == "normal"}}' class="video" style="width: 600rpx;" >
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
-</view>
+    <button class="sm_button_major" bindtap="smallButton" style="width: 125rpx;">
+      <text class="filter_text">小鱼池</text>
+    </button>
 
-<view wx:elif='{{selectStatus == "large"}}' class="video" style="width: 600rpx;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/large.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false"></video>
-</view>
+    <button class="sm_button_major" bindtap="mediumButton" style="width: 125rpx;">
+      <text class="filter_text">中鱼池</text>
+    </button>
 
-<view wx:elif='{{selectStatus == "medium"}}' class="video"  style="width: 600rpx;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/medium.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture"></video>
-</view>
+    <button class="sm_button_major" bindtap="largeButton" style="width: 125rpx;">
+      <text class="filter_text">大鱼池</text>
+    </button>
+  </view>
 
-<view wx:elif='{{selectStatus == "small"}}' class="video" style="width: 600rpx;">
-  <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture"></video>
-</view>
+  <view wx:if='{{selectStatus == "normal"}}' class="n_video">
+    <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
+  </view>
+
+  <view wx:elif='{{selectStatus == "large"}}' class="video">
+    <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/large.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 500rpx; height: 700rpx;"></video>
+  </view>
+
+  <view wx:elif='{{selectStatus == "medium"}}' class="video">
+    <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/medium.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
+  </view>
+
+  <view wx:elif='{{selectStatus == "small"}}' class="video">
+    <video src="cloud://cloud1-9gzhqnbp0f2610b4.636c-cloud1-9gzhqnbp0f2610b4-1309470202/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
+  </view>
+  <view style="height: 150rpx;"></view>
+</scroll-view>
 
 <view class="navigationBar">
   <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">

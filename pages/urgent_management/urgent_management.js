@@ -183,13 +183,13 @@ Page({
   },
 
   update: function (datapoints) {
-    const environmentData = this.convert(datapoints);
+    const urgentManagementData = this.convert(datapoints);
 
     this.setData({
-      temperature: environmentData.temperatureData[0],
-      small: environmentData.smallData[0],
-      medium: environmentData.mediumData[0],
-      large: environmentData.largeData[0]
+      temperature: urgentManagementData.temperatureData[0],
+      small: parseInt(urgentManagementData.smallData[0]),
+      medium: parseInt(urgentManagementData.mediumData[0]),
+      large: parseInt(urgentManagementData.largeData[0])
     }),
     this.getStatus();
     this.getMember();

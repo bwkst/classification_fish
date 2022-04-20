@@ -8,46 +8,70 @@ Page{
   line-height: 40rpx;
   font-family: "main_title";
   font-size: 55rpx;
-  margin: 50rpx 20rpx 20rpx 20rpx ;
+  margin: 60rpx 20rpx 20rpx 20rpx ;
 }
 
-.urgent_standard{
-  color: #326F60;
-  line-height: 70rpx;
-  font-family: "Time New Roman";
-  font-size: 30rpx;
-  padding: 20rpx 45rpx 20rpx 45rpx;
-  margin: 75rpx;
-  border: 4rpx solid #90C8BD;
-  border-radius: 10rpx;
-}
-
-.urgent_status{
+.um_border{
   color: #326F60;
   text-align: center;
-  line-height: 50rpx;
-  font-family: "Time New Roman";
-  font-size: 36rpx;
-  padding: 10rpx;
-  margin: 75rpx;
+  width: 600rpx;
+  padding: 10rpx 0rpx 10rpx 0rpx;
+  margin: 50rpx 75rpx 50rpx 75rpx;
+  line-height: fit-content;
   border: 4rpx solid #90C8BD;
   border-radius: 10rpx;
+}
+
+.um_content{
+  color: #326F60;
+  text-align: center;
+  margin: 20rpx 15rpx 20rpx 15rpx;
+  width: 540rpx;
+  line-height: fit-content;
+  font-family: "um_font";
+  font-size: 30rpx;
+  padding: 15rpx 5rpx 15rpx 5rpx;
+}
+
+.um_status{
+  color: #326F60;
+  text-align: center;
+  width: 550rpx;
+  padding: 35rpx 25rpx 35rpx 25rpx;
+  margin: 50rpx 75rpx 50rpx 75rpx;
+  line-height: fit-content;
+  border: 4rpx solid #90C8BD;
+  border-radius: 100rpx;
+  font-size: 38rpx;
+  font-family: "um_font";
 }
 
 .reminder{
   color: #326F60;
   text-align: center;
-  font-family: "Time New Roman";
-  font-size: 30rpx;
-  margin-bottom: 20rpx;
+  font-family: "um_font";
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+}
+
+.um_reminder{
+  color: #326F60;
+  text-align: center;
+  width: 500rpx;
+  padding: 10rpx 0rpx 10rpx 0rpx;
+  margin: 50rpx 125rpx 50rpx 125rpx;
+  line-height: fit-content;
+  border: 4rpx dashed #326F60;
+  border-radius: 10rpx;
+  font-family: "um_font";
 }
 
 .phoneButton{
-  align-items: center;
-  font-family: "Time New Roman";
+  font-family: "um_phone_font";
+  font-weight: bold;
   font-size: 36rpx;
-  line-height: 45rpx;
-  padding: 10rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
   border-radius: 25rpx;
   background-color: #90C8BD;
   color: #264841;

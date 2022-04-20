@@ -5,11 +5,12 @@
     <view class="ws_content">小鱼：{{maxSmall}}斤{{minSmall}}</view>
     <view class="ws_content">中鱼：{{minMedium}}斤 ~ {{maxMedium}}斤</view>
     <view class="ws_content">大鱼：{{minLarge}}.0斤{{maxLarge}}</view>
-    <view class="ws_remainder">水的重量：{{waterInLitre}}升 / {{waterWeight}}斤</view>
+    <view class="ws_reminder">水的重量：{{waterInLitre}}升 / {{waterWeight}}斤</view>
     <view class="ws_content">小鱼 & 水：{{maxSmall + waterWeight}}斤{{minSmall}}</view>
     <view class="ws_content">中鱼 & 水：{{minMedium + waterWeight}} ~ {{maxMedium + waterWeight}} 斤</view>
     <view class="ws_content">大鱼 & 水：{{minLarge + waterWeight}}斤{{maxLarge}}</view>
   </view>
+  <view style="height: 150rpx;"></view>
 </scroll-view>
 
 <view class="navigationBar">

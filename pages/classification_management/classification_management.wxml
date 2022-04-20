@@ -21,6 +21,7 @@
     <view class="fishContainerBorder" style="width: {{200 + medium * 15}}rpx">中鱼池：{{medium}}</view>
     <view class="fishContainerBorder" style="width: {{200 + large * 15}}rpx">大鱼池：{{large}}</view>
   </view>
+  <view style="height: 150rpx;"></view>
 </scroll-view>
 
 <view class="navigationBar">

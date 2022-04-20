@@ -1,22 +1,21 @@
 <view class="um_title">紧急处理器</view>
 
-<view class="urgent_standard">
-    <view>当前温度：{{temperature}}°C；建议温度：{{suggestTemperature}}°C</view>
-    <view>小鱼池数量：{{small}}；其最大容量：{{smallMaxCapacity}}</view>
-    <view>中鱼池数量：{{medium}}；其最大容量：{{mediumMaxCapacity}}</view>
-    <view>大鱼池数量：{{large}}；其最大容量：{{largeMaxCapacity}}</view>
-</view>
+<scroll-view scroll-y>
+  <view class="um_border">
+    <view class="um_content">当前温度：{{temperature}}°C；建议温度：{{suggestTemperature}}°C</view>
+    <view class="um_content">小鱼池数量：{{small}}；最大容量：{{smallMaxCapacity}}</view>
+    <view class="um_content">中鱼池数量：{{medium}}；最大容量：{{mediumMaxCapacity}}</view>
+    <view class="um_content">大鱼池数量：{{large}}；最大容量：{{largeMaxCapacity}}</view>
+  </view>
 
-<view class="urgent_status">
-    <view>当前状态为：{{statusNow}}</view>
-</view>
+  <view class="um_status">当前状态为：{{statusNow}}</view>
 
-<view class="reminder">遇紧急情况，请点击下方按钮拨打管理员电话！</view>
-<view class="reminder">今日值班人员：{{member}}</view>
+  <view class="reminder">遇紧急情况，请点击下方按钮拨打电话！</view>
+  <view class="um_reminder">今日值班人员：{{member}}</view>
 
-<view>
   <button class="phoneButton" bindtap="phoneCall">点此拨打电话</button>
-</view>
+  <view style="height: 200rpx;"></view>
+</scroll-view>
 
 <view class="navigationBar">
   <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
