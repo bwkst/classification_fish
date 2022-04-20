@@ -87,7 +87,7 @@ Page{
 }
 
 .ib_3{
-  background: linear-gradient(45deg,  #c8bb90, #c8a290);  
+  background: linear-gradient(45deg,  #C8C490, #C8A290);  
   border-radius: 50rpx 50rpx 50rpx 50rpx;
 }
 

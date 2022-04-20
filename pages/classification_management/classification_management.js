@@ -49,7 +49,7 @@ Page({
 
   onLoad: function () {
     console.log(`your deviceId: ${devicesId}, apiKey: ${api_key}`)
-    //每隔6s自动获取一次数据进行更新
+    //每隔1分钟自动获取一次数据进行更新：60000
     const timer = setInterval(() => {
       this.getDatapoints().then(datapoints => {
         this.update(datapoints)
@@ -95,7 +95,7 @@ Page({
             weight: response.data.datastreams[3].datapoints,
             large: response.data.datastreams[2].datapoints,
             medium: response.data.datastreams[1].datapoints,
-            small: response.data.datastreams[0].datapoints
+            small: response.data.datastreams[0].datapoints,
           })
         },
         fail: (err) => {
@@ -110,14 +110,13 @@ Page({
 
     this.setData({
       weight: environmentData.weightData[0],
-      small: environmentData.smallData[0],
-      medium: environmentData.mediumData[0],
-      large: environmentData.largeData[0]
+      small: parseInt(environmentData.smallData[0]),
+      medium: parseInt(environmentData.mediumData[0]),
+      large: parseInt(environmentData.largeData[0])
     }),
 
     this.getSize()
   },
-
 
   convert: function (datapoints) {
     var weightData = [];
