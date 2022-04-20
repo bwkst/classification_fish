@@ -7,7 +7,7 @@ Page{
   text-align: center;
   line-height: 40rpx;
   font-family: "main_title";
-  font-size: 55rpx;
+  font-size: 1.8rem;
   margin: 60rpx 20rpx 20rpx 20rpx ;
 }
 
@@ -29,7 +29,7 @@ Page{
   width: 540rpx;
   line-height: fit-content;
   font-family: "um_font";
-  font-size: 30rpx;
+  font-size: 0.9rem;
   padding: 15rpx 5rpx 15rpx 5rpx;
 }
 
@@ -42,7 +42,7 @@ Page{
   line-height: fit-content;
   border: 4rpx solid #90C8BD;
   border-radius: 100rpx;
-  font-size: 38rpx;
+  font-size: 1.2rem;
   font-family: "um_font";
 }
 
@@ -50,7 +50,7 @@ Page{
   color: #326F60;
   text-align: center;
   font-family: "um_font";
-  font-size: 32rpx;
+  font-size: 1em;
   margin-bottom: 30rpx;
 }
 
@@ -69,7 +69,7 @@ Page{
 .phoneButton{
   font-family: "um_phone_font";
   font-weight: bold;
-  font-size: 36rpx;
+  font-size: 1.1rem;
   line-height: 60rpx;
   padding: 20rpx;
   border-radius: 25rpx;

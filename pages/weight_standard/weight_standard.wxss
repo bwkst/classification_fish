@@ -7,7 +7,7 @@ Page{
   text-align: center;
   line-height: 30rpx;
   font-family: "main_title";
-  font-size: 50rpx;
+  font-size: 1.8em;
   margin: 65rpx 20rpx 20rpx 20rpx ;
 }
 
@@ -29,7 +29,7 @@ Page{
   width: 540rpx;
   line-height: fit-content;
   font-family: "ws_font";
-  font-size: 38rpx;
+  font-size: 1.2rem;
   padding: 15rpx 10rpx 15rpx 10rpx;
 }
 
@@ -40,7 +40,7 @@ Page{
   width: 540rpx;
   line-height: fit-content;
   font-family: "ws_font";
-  font-size: 38rpx;
+  font-size: 1.2rem;
   padding: 15rpx 10rpx 15rpx 10rpx;
   border: 4rpx dashed #326F60;
   border-radius: 10rpx;

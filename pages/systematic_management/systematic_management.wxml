@@ -2,19 +2,19 @@
 
 <scroll-view scroll-y>
   <view class="sm_row">
-    <button class="sm_button_major" bindtap="wholeButton" style="width: 125rpx;" >
+    <button class="sm_button_major" bindtap="wholeButton" style="width: 135rpx;" >
       <text class="filter_text">未分类</text>
     </button>
 
-    <button class="sm_button_major" bindtap="smallButton" style="width: 125rpx;">
+    <button class="sm_button_major" bindtap="smallButton" style="width: 135rpx;">
       <text class="filter_text">小鱼池</text>
     </button>
 
-    <button class="sm_button_major" bindtap="mediumButton" style="width: 125rpx;">
+    <button class="sm_button_major" bindtap="mediumButton" style="width: 135rpx;">
       <text class="filter_text">中鱼池</text>
     </button>
 
-    <button class="sm_button_major" bindtap="largeButton" style="width: 125rpx;">
+    <button class="sm_button_major" bindtap="largeButton" style="width: 135rpx;">
       <text class="filter_text">大鱼池</text>
     </button>
   </view>
@@ -39,15 +39,15 @@
 
 <view class="navigationBar">
   <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
-    <text class="navigate_buttontext">湿温 \n 检测仪</text>
+    <text class="navigate_buttontext">湿温\n检测仪</text>
   </button>
   <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
-    <text class="navigate_buttontext">分类 \n  计数仓</text>
+    <text class="navigate_buttontext">分类\n计数仓</text>
   </button>
   <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
-    <text class="navigate_buttontext">渔场 \n 监控室</text>
+    <text class="navigate_buttontext">渔场\n监控室</text>
   </button>
   <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
-    <text class="navigate_buttontext">紧急 \n 处理器</text>
+    <text class="navigate_buttontext">紧急\n处理器</text>
   </button>
 </view>

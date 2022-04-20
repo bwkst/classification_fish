@@ -7,7 +7,7 @@ Page{
   text-align: center;
   line-height: 80rpx;
   font-family: "main_title";
-  font-size: 55rpx;
+  font-size: 1.8rem;
   margin-top: 50rpx;
   margin-bottom: 50rpx;
 }
@@ -50,7 +50,7 @@ Page{
 
 .index_buttontext{
   font-family: "index_content";
-  font-size: 48rpx;
+  font-size: 1.5rem;
   color: #264841;
 }
 
@@ -98,7 +98,7 @@ Page{
 
 .index_buttontext_2{
   font-family: "index_content";
-  font-size: 36rpx;
+  font-size: 1.1rem;
   color: #264841;
 }
 

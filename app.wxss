@@ -2,7 +2,7 @@
   color:#326F60;
   text-align: center;
   font-family: "main_title";
-  font-size: 56rpx;
+  font-size: 1.8rem;
   margin: 50rpx;
 }
 
@@ -11,7 +11,7 @@
   text-align: left;
   line-height: 60rpx;
   font-family: "stitle_font";
-  font-size: 42rpx;
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 80rpx 0rpx 10rpx 40rpx;
 }
@@ -39,7 +39,7 @@
 
 .navigate_buttontext{
   font-family: "main_title";
-  font-size: 36rpx;
+  font-size: 1.1rem;
   color: #264841;
 }
 
@@ -56,12 +56,12 @@
 .content{
   color: #326F60;
   font-family: "content_font";
-  font-size: 38rpx;
+  font-size: 1.2rem;
 }
 
 .filter_text{
   font-family: "filter_font";
-  font-size: 32rpx;
+  font-size: 1rem;
   color: #264841;
 }
 

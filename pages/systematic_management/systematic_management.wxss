@@ -18,13 +18,13 @@ Page{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5rpx 20rpx 5rpx 230rpx;
+  margin: 5rpx 20rpx 5rpx 190rpx;
 }
 
 .sm_button_major{
   width: 320rpx;
   margin: 5rpx 0rpx 5rpx 0rpx;
-  padding: 15rpx;
+  padding: 5rpx;
   height: fit-content;
   border: 2rpx dashed #264841;
   border-radius: 5rpx;
