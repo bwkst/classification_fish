@@ -3,12 +3,12 @@
 <scroll-view scroll-y>
   <view class="contentBorder">
     <text class="content">当前温度：{{temperature}} °C</text>
-    <image class="ed_image edi_1" src="../img/temperature.png"></image>
+    <image class="ed_image edi_1" src="../../img/temperature.png"></image>
   </view>
 
   <view class="contentBorder">
     <text class="content">当前湿度：{{humidity}} %</text>
-    <image class="ed_image edi_2" src="../img/humidity.png"></image>
+    <image class="ed_image edi_2" src="../../img/humidity.png"></image>
   </view>
 
   <view class="stitle">变化曲线图</view>

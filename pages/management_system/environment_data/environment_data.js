@@ -1,4 +1,4 @@
-var myCharts = require("../../utils/wxcharts.js")//引入一个绘图的插件
+var myCharts = require("../../../utils/wxcharts.js")//引入一个绘图的插件
 const devicesId = "899161544" // devicesId
 const api_key = "E=0WdCeJBKGsORZhFxGGW0iaY2Q=" // Api-key 
 
@@ -224,25 +224,25 @@ Page({
 
   environment_data: function(){
     wx.redirectTo({
-      url: '/pages/environment_data/environment_data',
+      url: '/pages/management_system/environment_data/environment_data',
       })
   },
 
   classification_management: function(){
     wx.redirectTo({
-      url: '/pages/classification_management/classification_management',
+      url: '/pages/management_system/classification_management/classification_management',
     })
   },
 
   systematic_management: function(){
     wx.redirectTo({
-      url: '/pages/systematic_management/systematic_management',
+      url: '/pages/management_system/systematic_management/systematic_management',
       })
   },
 
   urgent_management: function(){
     wx.redirectTo({
-      url: '/pages/urgent_management/urgent_management',
+      url: '/pages/management_system/urgent_management/urgent_management',
       })
   }
 

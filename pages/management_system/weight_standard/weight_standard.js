@@ -13,25 +13,25 @@ Page({
 
   environment_data: function(){
     wx.redirectTo({
-      url: '/pages/environment_data/environment_data',
+      url: '/pages/management_system/environment_data/environment_data',
       })
   },
 
   classification_management: function(){
     wx.redirectTo({
-      url: '/pages/classification_management/classification_management',
+      url: '/pages/management_system/classification_management/classification_management',
     })
   },
 
   systematic_management: function(){
     wx.redirectTo({
-      url: '/pages/systematic_management/systematic_management',
+      url: '/pages/management_system/systematic_management/systematic_management',
       })
   },
 
   urgent_management: function(){
     wx.redirectTo({
-      url: '/pages/urgent_management/urgent_management',
+      url: '/pages/management_system/urgent_management/urgent_management',
       })
   }
 

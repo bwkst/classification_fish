@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/systematic_management/systematic_management",
-    "pages/urgent_management/urgent_management",
-    "pages/classification_management/classification_management",
-    "pages/environment_data/environment_data",
-    "pages/weight_standard/weight_standard"
+    "pages/management_system/systematic_management/systematic_management",
+    "pages/management_system/urgent_management/urgent_management",
+    "pages/management_system/classification_management/classification_management",
+    "pages/management_system/environment_data/environment_data",
+    "pages/management_system/weight_standard/weight_standard"
   ],
   "window": {
     "backgroundColor": "#fff",

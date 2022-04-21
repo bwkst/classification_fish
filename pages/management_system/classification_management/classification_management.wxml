@@ -11,7 +11,7 @@
     <text wx:if='{{fish_classify == "小鱼"}}' class="content" style="font-size: 42rpx;">小鱼</text>
     <text wx:if='{{fish_classify == "中鱼"}}' class="content" style="font-size: 42rpx;">中鱼</text>
     <text wx:if='{{fish_classify == "大鱼"}}' class="content" style="font-size: 42rpx;">大鱼</text>
-    <image class="standardButton" src="../img/reminder.png" bindtap="weight_standard"></image>
+    <image class="standardButton" src="../../img/reminder.png" bindtap="weight_standard"></image>
   </view>
 
   <view class="stitle">鱼池数量图</view>
