@@ -8,7 +8,7 @@ Page({
 
   classification_management: function(){
     wx.navigateTo({
-      url: 'pages/management_system/classification_management/classification_management',
+      url: '/pages/management_system/classification_management/classification_management',
     })
   },
 
