@@ -14,6 +14,7 @@
   <view class="um_reminder">今日值班人员：{{member}}</view>
 
   <button class="phoneButton" bindtap="phoneCall">点此拨打电话</button>
+  <button class="phoneButton" bindtap="videoCall">点此与专家视频</button>
   <view style="height: 200rpx;"></view>
 </scroll-view>
 

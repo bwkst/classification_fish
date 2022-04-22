@@ -22,13 +22,13 @@ Page{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5rpx 20rpx 5rpx 400rpx;
+  margin: 5rpx 20rpx 5rpx 440rpx;
 }
 
 .ed_button_major{
-  width: 320rpx;
-  margin: 5rpx 0rpx 5rpx 0rpx;
-  padding: 15rpx;
+  width: 280rpx;
+  margin: 5rpx 0rpx 15rpx 0rpx;
+  padding: 5rpx;
   height: fit-content;
   border: 2rpx dashed #264841;
   border-radius: 5rpx;
@@ -36,7 +36,25 @@ Page{
 }
 
 .canvas{
-  margin: 37rpx;
+  margin: 0rpx 37rpx 0rpx 37rpx;
   width: 90%;
-  height: 400rpx;
+  height: 370rpx;
+}
+
+.ed_breed{
+  color: #326F60;
+  text-align: left;
+  line-height: fit-content;
+  font-family: "Time New Roman";
+  font-size: 1.2rem;
+  margin: 30rpx 60rpx 10rpx 60rpx;
+}
+
+.ed_expertise{
+  color: #326F60;
+  text-align: left;
+  line-height: fit-content;
+  font-family: "expertise_font";
+  font-size: 1.2rem;
+  margin: 30rpx 60rpx 10rpx 60rpx;
 }

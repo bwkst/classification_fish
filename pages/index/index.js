@@ -32,8 +32,7 @@ Page({
 
   communication_center: function(){
     wx.navigateTo({
-      url: '/pages/communication_center/communication_center',
+      url: '/pages/communication_center/login/login',
     })
   }
-  
 })

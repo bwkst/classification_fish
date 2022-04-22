@@ -6,7 +6,16 @@ Page({
   data: {
     temperature: "无数据",
     humidity: "无数据",
-    statusButton: "无数据"
+    statusButton: "温度",
+    expertise_content: "请移步交流广场咨询",
+    breed_content: "请输入品种名称"
+  },
+
+  breed: function(res){
+    console.log(res.detail.value);
+    this.setData({
+      breed_content: res.detail.value
+    })
   },
 
   temperatureButton: function(){

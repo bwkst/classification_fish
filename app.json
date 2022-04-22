@@ -5,7 +5,9 @@
     "pages/management_system/urgent_management/urgent_management",
     "pages/management_system/classification_management/classification_management",
     "pages/management_system/environment_data/environment_data",
-    "pages/management_system/weight_standard/weight_standard"
+    "pages/management_system/weight_standard/weight_standard",
+    "pages/communication_center/forum_center/forum_center",
+    "pages/communication_center/login/login"
   ],
   "window": {
     "backgroundColor": "#fff",

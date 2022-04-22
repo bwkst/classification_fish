@@ -15,6 +15,10 @@ Page({
     member: "暂无数据"
   },
 
+  videoCall: function(){
+
+  },
+
   getMember: function(){
     var week = new Date().getDay();  
     switch (week) {
@@ -194,7 +198,6 @@ Page({
     this.getStatus();
     this.getMember();
   },
-
 
   convert: function (datapoints) {
     var temperatureData = [];

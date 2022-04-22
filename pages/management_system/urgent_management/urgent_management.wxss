@@ -67,7 +67,7 @@ Page{
 }
 
 .phoneButton{
-  font-family: "um_phone_font";
+  font-family: "um_phone_font","um_video_font";
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 60rpx;
