@@ -12,11 +12,33 @@ Page({
     mediumMaxCapacity: 20,
     largeMaxCapacity: 20,
     statusNow: "暂无数据",
-    member: "暂无数据"
+    member: "暂无数据",
+    openId: "",
+    envId: ""
   },
 
   videoCall: function(){
-
+    var that = this;
+    this.getOpenId();
+    wx.setEnable1v1Chat({
+      enable: true,
+      success: function (res) {
+        console.log(res);
+        wx.join1v1Chat({
+          caller: {
+            nickname: '小白',
+            openid: that.data.openId,
+          },
+          listener: {
+            nickname: '专家',
+            openid: 'odVu95M1-c2jnTqy2Gjk1nl5Zurw',
+          },
+        })
+      },
+      fail: function (err) {
+        console.log(err)
+      },
+    })
   },
 
   getMember: function(){
@@ -124,6 +146,7 @@ Page({
       console.error(error)})
     wx.hideNavigationBarLoading();
     wx.stopPullDownRefresh();
+    this.getOpenId();
   },
 
   onLoad: function () {
@@ -197,6 +220,7 @@ Page({
     }),
     this.getStatus();
     this.getMember();
+    this.getOpenId();
   },
 
   convert: function (datapoints) {
@@ -218,6 +242,23 @@ Page({
       mediumData: mediumData,
       largeData: largeData
     }
+  },
+
+  getOpenId() {
+    wx.cloud.callFunction({
+      name: 'quickstartFunctions',
+      config: {
+        env: this.data.envId
+      },
+      data: {
+        type: 'getOpenId'
+      }
+    }).then((resp) => {
+      this.setData({
+        openId: resp.result.openid
+      });
+      console.log(resp.result.openid);
+    })
   },
 
   environment_data: function(){
