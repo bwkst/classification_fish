@@ -146,7 +146,7 @@ Page({
       clearInterval(timer) //首次渲染发生错误时禁止自动刷新
     }),
 
-    this.getMember()
+    this.getMember();
   },
 
   getDatapoints: function () {

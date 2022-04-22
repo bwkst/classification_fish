@@ -15,7 +15,8 @@ Page({
     console.log(res.detail.value);
     this.setData({
       breed_content: res.detail.value
-    })
+    }),
+    this.getSuggestion();
   },
 
   temperatureButton: function(){
@@ -42,6 +43,7 @@ Page({
     })
     wx.hideNavigationBarLoading();
     wx.stopPullDownRefresh();
+    wx.getSuggestion();
   },
 
   onLoad: function () {
@@ -128,7 +130,9 @@ Page({
         data: environmentData.temperature,
         format: (val, name) => val.toFixed(2)
       }],
-    })
+    }),
+
+    this.getSuggestion();
 
   },
 
@@ -229,6 +233,188 @@ Page({
         lineStyle: 'curve'
       }
     });
+  },
+
+  getSuggestion: function(){
+    var S_temp = this.data.temperature;
+    var S_hum = this.data.humidity;
+    var S_breed = this.data.breed_content;
+    switch (S_breed){
+      case "鱼一":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼一正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼一建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼一警告"
+          })
+          break;
+        };
+      case "鱼二":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+          expertise_content: "鱼二正常"
+        })
+        break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼二建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼二警告"
+          })
+          break;
+        };
+      case "鱼三":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+        this.setData({
+          expertise_content: "鱼三正常"
+        })
+        break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼三建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼三警告"
+          })
+          break;
+        };
+      case "鱼四":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼四正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼四建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼四警告"
+          })
+          break;
+        };
+      case "鱼五":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼五正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼五建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼五警告"
+          })
+          break;
+        };
+      case "鱼六":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼六正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼六建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼六警告"
+          })
+          break;
+        };
+      case "鱼七":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼七正常"
+          })
+            break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼七建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼七警告"
+          })
+          break;
+        };
+      case "鱼八":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼八正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼八建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼八警告"
+          })
+          break;
+        };
+      case "鱼九":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼九正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼九建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼九警告"
+          })
+          break;
+        };
+      case "鱼十":
+        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+          this.setData({
+            expertise_content: "鱼十正常"
+          })
+          break;
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+          this.setData({
+            expertise_content: "鱼十建议"
+          })
+          break;
+        }else{
+          this.setData({
+            expertise_content: "鱼十警告"
+          })
+          break;
+        };
+      default:
+        this.setData({
+          expertise_content: "请移步交流广场咨询"
+        })          
+    }
   },
 
   environment_data: function(){
