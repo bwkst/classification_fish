@@ -1,6 +1,7 @@
 // pages/communication_center/area_of_member/area_of_member.js
 Page({
-
+  //显示用户头像+名字
+  
   /**
    * 页面的初始数据
    */
