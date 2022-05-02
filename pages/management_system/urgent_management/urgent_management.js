@@ -14,24 +14,31 @@ Page({
     statusNow: "暂无数据",
     member: "暂无数据",
     openId: "",
-    envId: ""
+    envId: "",
+    listenerOpenId: "",
+    listenerNickname: "",
   },
 
   videoCall: function(){
     var that = this;
+    console.log("当前1", that.data.openId)
+    console.log("专家1", that.data.listenerOpenId);
     this.getOpenId();
+    this.getMember();
     wx.setEnable1v1Chat({
       enable: true,
       success: function (res) {
         console.log(res);
+        console.log("当前2", that.data.openId)
+        console.log("专家2", that.data.listenerOpenId);
         wx.join1v1Chat({
           caller: {
             nickname: '小白',
             openid: that.data.openId,
           },
           listener: {
-            nickname: '专家',
-            openid: 'odVu95M1-c2jnTqy2Gjk1nl5Zurw',
+            nickname: that.data.listenerNickname,
+            openid: that.data.listenerOpenId,
           },
         })
       },
@@ -46,37 +53,51 @@ Page({
     switch (week) {
       case 0:  
         this.setData({
-          member: "符雪媛"
+          member: "符雪媛",
+          listenerOpenId: "odVu95Kvur6FP5SD_MqqLcGfTtRo",
+          listenerNickname: "权威专家-符老师"
         })
         break;  
       case 1:  
         this.setData({
-          member: "罗婷尹"
+          member: "罗婷尹",
+          listenerOpenId: "odVu95KT9E-1xiCNAM74hWHb5qPc",
+          listenerNickname: "权威专家-罗老师"
         })
         break;  
       case 2:  
         this.setData({
-          member: "柯家寶"
+          member: "柯家宝",
+          listenerOpenId: "odVu95M1-c2jnTqy2Gjk1nl5Zurw",
+          listenerNickname: "资深研究员-北老师"
         })
         break;  
       case 3:  
         this.setData({
-          member: "赵太宁"
+          member: "赵太宁",
+          listenerOpenId: "odVu95CTen0t5_2tQBv TSTkRS_A",
+          listenerNickname: "资深研究员-赵老师"
         })
         break;  
       case 4: 
         this.setData({
-          member: "庞程"
+          member: "符雪媛",
+          listenerOpenId: "odVu95Kvur6FP5SD_MqqLcGfTtRo",
+          listenerNickname: "权威专家-符博士"
         })
         break;  
       case 5:  
         this.setData({
-          member: "符雪媛"
+          member: "罗婷尹",
+          listenerOpenId: "odVu95KT9E-1xiCNAM74hWHb5qPc",
+          listenerNickname: "权威专家-罗博士"
         })
         break;
       case 6:
         this.setData({
-          member: "符雪媛"
+          member: "柯家宝",
+          listenerOpenId: "odVu95M1-c2jnTqy2Gjk1nl5Zurw",
+          listenerNickname: "资深研究员-北老师"
         })
         break;
     }
@@ -100,13 +121,13 @@ Page({
         phoneNumber="18889666813";  
         break;  
       case 4: 
-        phoneNumber="17797028663";
+        phoneNumber="15203013593";
         break;  
       case 5:  
-        phoneNumber="15203013593";
+        phoneNumber="18389432506";
         break;
       case 6:
-        phoneNumber="15203013593";
+        phoneNumber="13141011254";
         break;
     }
     if (week >= 0){
@@ -257,7 +278,6 @@ Page({
       this.setData({
         openId: resp.result.openid
       });
-      console.log(resp.result.openid);
     })
   },
 

@@ -7,13 +7,15 @@
     "pages/management_system/environment_data/environment_data",
     "pages/management_system/weight_standard/weight_standard",
     "pages/communication_center/forum_center/forum_center",
-    "pages/communication_center/login/login"
+    "pages/communication_center/login/login",
+    "pages/communication_center/post_forum/post_forum",
+    "pages/communication_center/area_of_member/area_of_member"
   ],
   "window": {
     "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#193331",
-    "navigationBarTitleText": "全自动称重分鱼",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },

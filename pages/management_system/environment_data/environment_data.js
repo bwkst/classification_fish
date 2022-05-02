@@ -237,152 +237,152 @@ Page({
 
   getSuggestion: function(){
     var S_temp = this.data.temperature;
-    var S_hum = this.data.humidity;
+    //var S_hum = this.data.humidity;
     var S_breed = this.data.breed_content;
     switch (S_breed){
-      case "鱼一":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "东星斑":
+        if (S_temp >= 25 && S_temp <= 30){
           this.setData({
-            expertise_content: "鱼一正常"
+            expertise_content: "目前环境适合养殖东星斑；由于东星斑并非淡水鱼，因此建议将东星斑与石斑鱼进行混养。"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=21 && S_temp < 25){
           this.setData({
-            expertise_content: "鱼一建议"
+            expertise_content: "目前环境会让东星斑生长缓慢，且易生病，建议将温度调至25°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼一警告"
+            expertise_content: "目前环境会对东星斑造成较大的死亡风险，请尽快将温度调至25°。"
           })
           break;
         };
-      case "鱼二":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "石斑鱼":
+        if (S_temp >= 25 && S_temp <= 30){
           this.setData({
-          expertise_content: "鱼二正常"
+          expertise_content: "目前环境适合养殖石斑鱼；由于石斑鱼为淡水鱼，因此需要在冬季时期多加注意，防止冻伤。"
         })
         break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=21 && S_temp < 25 || S_temp > 30 && S_temp <= 32){
           this.setData({
-            expertise_content: "鱼二建议"
+            expertise_content: "目前环境会让石斑鱼生长缓慢，且易生病，建议将温度调至25°-30°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼二警告"
+            expertise_content: "目前环境会对东星斑造成较大的死亡风险，请尽快将温度调至25°-30°。"
           })
           break;
         };
-      case "鱼三":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "罗非鱼":
+        if (S_temp >= 28 && S_temp <= 32){
         this.setData({
-          expertise_content: "鱼三正常"
+          expertise_content: "目前环境适合养殖罗非鱼。"
         })
         break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=16 && S_temp < 28 || S_temp > 32 && S_temp <= 35){
           this.setData({
-            expertise_content: "鱼三建议"
+            expertise_content: "目前环境会让罗非鱼生长缓慢，且易生病，建议将温度调至28°-32°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼三警告"
+            expertise_content: "目前环境会对罗非鱼造成较大的死亡风险，请尽快将温度调至28°-32°。"
           })
           break;
         };
-      case "鱼四":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "金鲳鱼":
+        if (S_temp >= 22 && S_temp <= 28){
           this.setData({
-            expertise_content: "鱼四正常"
+            expertise_content: "目前环境适合养殖金鲳鱼；请保持水质清爽，环境稳定。"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=17 && S_temp < 22 || S_temp > 28 && S_temp <= 30){
           this.setData({
-            expertise_content: "鱼四建议"
+            expertise_content: "目前环境会让金鲳鱼生长缓慢，且易生病，建议将温度调至22°-28°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼四警告"
+            expertise_content: "目前环境会对金鲳鱼造成较大的死亡风险，请尽快将温度调至22°-28°。"
           })
           break;
         };
-      case "鱼五":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "鲫鱼":
+        if (S_temp >= 15 && S_temp <= 25){
           this.setData({
-            expertise_content: "鱼五正常"
+            expertise_content: "目前环境适合养殖鲫鱼；由于鲫鱼为冷水鱼，因此在高温季节，需要一周加注一次新水。"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=13 && S_temp < 15 || S_temp > 25 && S_temp <= 39){
           this.setData({
-            expertise_content: "鱼五建议"
+            expertise_content: "目前环境会让鲫鱼生长缓慢，且易生病，建议将温度调至15°-25°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼五警告"
+            expertise_content: "目前环境会对鲫鱼造成较大的死亡风险，请尽快将温度调至15°-25°。"
           })
           break;
         };
-      case "鱼六":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "鲢鱼":
+        if (S_temp >= 25 && S_temp <= 30){
           this.setData({
-            expertise_content: "鱼六正常"
+            expertise_content: "目前环境适合养殖鲢鱼；由于鲢鱼喜热不喜冷，因此需要注意水体内有足够的氧气。"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=16 && S_temp < 25 || S_temp > 30 && S_temp <= 32){
           this.setData({
-            expertise_content: "鱼六建议"
+            expertise_content: "目前环境会让鲢鱼生长缓慢，且易生病，建议将温度调至25°-30°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼六警告"
+            expertise_content: "目前环境会对鲢鱼造成较大的死亡风险，请尽快将温度调至25°-30°。"
           })
           break;
         };
-      case "鱼七":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "鲈鱼":
+        if (S_temp >= 23 && S_temp <= 28){
           this.setData({
-            expertise_content: "鱼七正常"
+            expertise_content: "目前环境适合养殖鲈鱼；由于鲈鱼易受惊吓，因此请保持水质清洁。"
           })
             break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=8 && S_temp < 23 || S_temp > 28 && S_temp <= 30){
           this.setData({
-            expertise_content: "鱼七建议"
+            expertise_content: "目前环境会让鲈鱼难以觅食，生长缓慢，建议将温度调至23°-28°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼七警告"
+            expertise_content: "目前环境会对鲈鱼造成较大的死亡风险，请尽快将温度调至23°-28°。"
           })
           break;
         };
-      case "鱼八":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+      case "鳜鱼":
+        if (S_temp >= 15 && S_temp <= 32){
           this.setData({
-            expertise_content: "鱼八正常"
+            expertise_content: "目前环境适合养殖鳜鱼；鳜鱼需要活水，水质要求会较高。"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=11 && S_temp < 15 || S_temp > 32 && S_temp <= 35){
           this.setData({
-            expertise_content: "鱼八建议"
+            expertise_content: "目前环境会让鳜鱼难以觅食，生长缓慢，建议将温度调至15°-32°。"
           })
           break;
         }else{
           this.setData({
-            expertise_content: "鱼八警告"
+            expertise_content: "目前环境会对鳜鱼造成较大的死亡风险，请尽快将温度调至15°-32°。"
           })
           break;
         };
       case "鱼九":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+        if (S_temp >= 25 && S_temp <= 30){
           this.setData({
             expertise_content: "鱼九正常"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35){
           this.setData({
             expertise_content: "鱼九建议"
           })
@@ -394,12 +394,12 @@ Page({
           break;
         };
       case "鱼十":
-        if (S_temp >= 25 && S_temp <= 30 && S_hum >= 65 && S_hum <= 80){
+        if (S_temp >= 25 && S_temp <= 30){
           this.setData({
             expertise_content: "鱼十正常"
           })
           break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35 || S_hum >= 50 && S_hum < 65 || S_hum > 80 && S_hum <= 95){
+        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35){
           this.setData({
             expertise_content: "鱼十建议"
           })
