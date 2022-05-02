@@ -7,7 +7,7 @@ Page({
     temperature: "无数据",
     humidity: "无数据",
     statusButton: "温度",
-    expertise_content: "请移步交流广场咨询",
+    expertise_content: "暂无数据",
     breed_content: "请输入品种名称"
   },
 
@@ -130,10 +130,7 @@ Page({
         data: environmentData.temperature,
         format: (val, name) => val.toFixed(2)
       }],
-    }),
-
-    this.getSuggestion();
-
+    })
   },
 
 
@@ -376,40 +373,11 @@ Page({
           })
           break;
         };
-      case "鱼九":
-        if (S_temp >= 25 && S_temp <= 30){
-          this.setData({
-            expertise_content: "鱼九正常"
-          })
-          break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35){
-          this.setData({
-            expertise_content: "鱼九建议"
-          })
-          break;
-        }else{
-          this.setData({
-            expertise_content: "鱼九警告"
-          })
-          break;
-        };
-      case "鱼十":
-        if (S_temp >= 25 && S_temp <= 30){
-          this.setData({
-            expertise_content: "鱼十正常"
-          })
-          break;
-        }else if(S_temp >=20 && S_temp < 25 || S_temp > 30 && S_temp <= 35){
-          this.setData({
-            expertise_content: "鱼十建议"
-          })
-          break;
-        }else{
-          this.setData({
-            expertise_content: "鱼十警告"
-          })
-          break;
-        };
+      case "":
+        this.setData({
+          expertise_content: "暂无数据"
+        })
+        break;
       default:
         this.setData({
           expertise_content: "请移步交流广场咨询"
