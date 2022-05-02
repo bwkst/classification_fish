@@ -7,7 +7,7 @@ Page({
     temperature: "无数据",
     humidity: "无数据",
     statusButton: "温度",
-    expertise_content: "暂无数据",
+    expertise_content: "请输入鱼的种类",
     breed_content: "请输入品种名称"
   },
 
@@ -375,7 +375,7 @@ Page({
         };
       case "":
         this.setData({
-          expertise_content: "暂无数据"
+          expertise_content: "请输入鱼的种类"
         })
         break;
       default:
