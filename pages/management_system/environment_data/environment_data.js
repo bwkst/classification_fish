@@ -380,7 +380,7 @@ Page({
         break;
       default:
         this.setData({
-          expertise_content: "请移步交流广场咨询"
+          expertise_content: "暂无此品种的建议，请移步交流广场咨询"
         })          
     }
   },
