@@ -1,6 +1,6 @@
 <view class="ws_title">标准详情</view>
 
-<scroll-view scroll-y>
+<scroll-view scroll-y="true">
   <view class="ws_border">
     <view class="ws_content">小鱼：{{maxSmall}}斤{{minSmall}}</view>
     <view class="ws_content">中鱼：{{minMedium}}斤 ~ {{maxMedium}}斤</view>

@@ -1,6 +1,6 @@
 <view class="um_title">紧急处理器</view>
 
-<scroll-view scroll-y>
+<scroll-view scroll-y="true">
   <view class="um_border">
     <view class="um_content">当前温度：{{temperature}}°C；建议温度：{{suggestTemperature}}°C</view>
     <view class="um_content">小鱼池数量：{{small}}；最大容量：{{smallMaxCapacity}}</view>

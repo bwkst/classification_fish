@@ -1,6 +1,6 @@
 <view class="title">湿温检测仪</view>
 
-<scroll-view scroll-y>
+<scroll-view scroll-y="true">
   <view class="contentBorder">
     <text class="content">当前温度：{{temperature}} °C</text>
     <image class="ed_image edi_1" src="../../img/temperature.png"></image>
@@ -14,11 +14,11 @@
   <view class="stitle">变化曲线图</view>
 
   <view class="ed_row">
-    <button class="ed_button_major" bindtap="temperatureButton" style="width: 140rpx;" >
+    <button class="ed_button_major" bindtap="temperatureButton" style="width: 140rpx; margin: 0rpx" >
       <text class="filter_text">温度</text>
     </button>
 
-    <button class="ed_button_major" bindtap="humidityButton" style="width: 140rpx;">
+    <button class="ed_button_major" bindtap="humidityButton" style="width: 140rpx; margin: 0rpx">
       <text class="filter_text">湿度</text>
     </button>
   </view>

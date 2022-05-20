@@ -1,20 +1,20 @@
 <view class="title">渔场监控室</view>
 
-<scroll-view scroll-y>
+<scroll-view scroll-y="true">
   <view class="sm_row">
-    <button class="sm_button_major" bindtap="wholeButton" style="width: 135rpx;" >
+    <button class="sm_button_major" bindtap="wholeButton" style="width: 135rpx; margin: 0rpx;" >
       <text class="filter_text">未分类</text>
     </button>
 
-    <button class="sm_button_major" bindtap="smallButton" style="width: 135rpx;">
+    <button class="sm_button_major" bindtap="smallButton" style="width: 135rpx; margin: 0rpx;">
       <text class="filter_text">小鱼池</text>
     </button>
 
-    <button class="sm_button_major" bindtap="mediumButton" style="width: 135rpx;">
+    <button class="sm_button_major" bindtap="mediumButton" style="width: 135rpx; margin: 0rpx;">
       <text class="filter_text">中鱼池</text>
     </button>
 
-    <button class="sm_button_major" bindtap="largeButton" style="width: 135rpx;">
+    <button class="sm_button_major" bindtap="largeButton" style="width: 135rpx; margin: 0rpx;">
       <text class="filter_text">大鱼池</text>
     </button>
   </view>

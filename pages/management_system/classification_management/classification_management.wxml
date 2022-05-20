@@ -1,6 +1,6 @@
 <view class="title">分类计数仓</view>
 
-<scroll-view scroll-y>
+<scroll-view scroll-y="true">
   <view class="contentBorder"> 
     <text class="content" style="font-size: 42rpx;">当前重量：</text>
     <text class="content" style="font-size: 42rpx;">{{weight}} (斤)</text>
@@ -23,6 +23,6 @@
   </view>
 </scroll-view>
 
-<view style="height: 100rpx;"></view>
+<view style="height: 150rpx;"></view>
 
 <include src="/pages/management_system/navigation_bar/navigation_bar"/>
