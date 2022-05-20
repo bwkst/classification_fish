@@ -23,3 +23,8 @@ Page{
   border: 4rpx dashed #90C8BD;
   border-radius: 10rpx;
 }
+
+.cm_fish_row{
+  display: flex;
+  flex-direction: row;
+}

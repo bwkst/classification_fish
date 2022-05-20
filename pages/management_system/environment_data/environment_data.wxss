@@ -21,15 +21,13 @@ Page{
 }
 
 .ed_row{
+  margin: 15rpx;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 5rpx 20rpx 5rpx 440rpx;
+  justify-content: flex-end;
 }
 
 .ed_button_major{
-  width: 280rpx;
-  margin: 5rpx 0rpx 15rpx 0rpx;
   padding: 5rpx;
   height: fit-content;
   border: 2rpx dashed #264841;
