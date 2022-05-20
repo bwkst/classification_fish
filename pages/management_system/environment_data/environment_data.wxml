@@ -28,8 +28,6 @@
     <canvas wx:elif='{{statusButton == "温度"}}' class="canvas" canvas-id="temperature"></canvas>
   </view>
 
-  <view style="height: 500rpx;"></view>
-
   <view class="stitle">鱼的种类</view>
   <input placeholder="请输入鱼的种类" bindinput="breed" class="ed_breed"/>
 
