@@ -1,3 +1,7 @@
+page{
+  background-color: #E0ECDE;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -16,3 +20,27 @@
 .usermotto {
   margin-top: 200px;
 }
+page{
+  background-color: #E0ECDE;
+}
+.size{
+  display: flex;
+  justify-content: center;
+}
+.font{
+  font-family: cursive;
+  font-size: 100rpx;
+  color: #264841;
+  margin-left: 10%;
+  margin-top: 30%;
+}
+.img{
+  width: 280rpx;
+  height: 280rpx;
+  margin-top: 45%;
+}
+.login{
+  background: linear-gradient(135deg,#90C899 10%, #90C8BD 50%, #5CC9B3);
+  margin-top: 30%;
+}
+

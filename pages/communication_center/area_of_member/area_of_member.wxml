@@ -1,1 +1,5 @@
-<view>用户中心/我的</view>
+<view class="root">
+<image class="avatar" src="{{avatar}}"></image>
+<view>{{nickName}}</view>
+<button class="logout" bindtap="logout">退出登录</button>
+</view>

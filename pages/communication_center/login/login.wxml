@@ -1,2 +1,5 @@
-<view>登陆页面</view>
-<view>授权登录</view>
+<view wx:if="{{!Haslogin}}" class="font">欢迎登录论坛</view>
+<view class="size">
+<image wx:if="{{!Haslogin}}" class="img" src="../../img/fish.png" mode="scaleToFill"></image>
+</view>
+<button wx:if="{{!Haslogin}}" class="login" bindtap="login">授权登录</button>
