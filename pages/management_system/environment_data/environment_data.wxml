@@ -29,25 +29,12 @@
   </view>
 
   <view class="stitle">鱼的种类</view>
-  <input placeholder="请输入鱼的种类" bindinput="breed" class="ed_breed" auto-focus="true"/>
+  <input placeholder="请输入鱼的种类" bindinput="breed" class="ed_breed"/>
 
   <view class="stitle">专家建议</view>
   <view class="ed_expertise">{{expertise_content}}</view>
-
-  <view style="height: 200rpx;"></view>
 </scroll-view>
 
-<view class="navigationBar">
-  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
-    <text class="navigate_buttontext">湿温\n检测仪</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
-    <text class="navigate_buttontext">分类\n计数仓</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
-    <text class="navigate_buttontext">渔场\n监控室</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
-    <text class="navigate_buttontext">紧急\n处理器</text>
-  </button>
-</view>
+<view style="height: 200rpx;"></view>
+
+<include src="/pages/management_system/navigation_bar/navigation_bar"/>

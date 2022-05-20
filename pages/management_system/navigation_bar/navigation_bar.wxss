@@ -1,0 +1,27 @@
+.navigationBar{
+  z-index: 1;
+  position: fixed;
+  bottom: 1rpx;
+  right: 1rpx;
+  left: 1rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #90C8BD;
+}
+
+.navigationButton{
+  padding: 15rpx;
+  box-sizing: border-box;
+  height: fit-content;
+  border-right: 1rpx solid #264841;
+  border-radius: 0rpx;
+  background-color: #90C8BD;
+  color: #264841;
+}
+
+.navigate_buttontext{
+  font-family: "main_title";
+  font-size: 1.1rem;
+  color: #264841;
+}

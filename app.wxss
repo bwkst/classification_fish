@@ -16,33 +16,6 @@
   margin: 80rpx 0rpx 10rpx 40rpx;
 }
 
-.navigationBar{
-  position: fixed;
-  bottom: 5rpx;
-  right: 1rpx;
-  left: 1rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.navigationButton{
-  margin: 1rpx;
-  padding: 15rpx;
-  box-sizing: border-box;
-  height: fit-content;
-  border: 1rpx solid #90C8BD;
-  border-radius: 5rpx;
-  background-color: #90C8BD;
-  color: #264841;
-}
-
-.navigate_buttontext{
-  font-family: "main_title";
-  font-size: 1.1rem;
-  color: #264841;
-}
-
 .contentBorder{
   color: #326F60;
   margin: 15rpx 75rpx 15rpx 75rpx;

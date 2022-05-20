@@ -2,6 +2,8 @@ Page{
   background-color: #E0ECDE;
 }
 
+@import "/pages/management_system/navigation_bar/navigation_bar";
+
 .n_video{
   margin: 25rpx;
   width: 700rpx;

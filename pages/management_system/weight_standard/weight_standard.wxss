@@ -2,6 +2,8 @@ Page{
   background-color: #E0ECDE;
 }
 
+@import "/pages/management_system/navigation_bar/navigation_bar";
+
 .ws_title{
   color:#326F60;
   text-align: center;

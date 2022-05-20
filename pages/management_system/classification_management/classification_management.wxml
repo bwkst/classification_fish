@@ -21,20 +21,8 @@
     <view class="fishContainerBorder" style="width: {{200 + medium * 15}}rpx">中鱼池：{{medium}}</view>
     <view class="fishContainerBorder" style="width: {{200 + large * 15}}rpx">大鱼池：{{large}}</view>
   </view>
-  <view style="height: 150rpx;"></view>
 </scroll-view>
 
-<view class="navigationBar">
-  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
-    <text class="navigate_buttontext">湿温\n检测仪</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
-    <text class="navigate_buttontext">分类\n计数仓</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
-    <text class="navigate_buttontext">渔场\n监控室</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
-    <text class="navigate_buttontext">紧急\n处理器</text>
-  </button>
-</view>
+<view style="height: 100rpx;"></view>
+
+<include src="/pages/management_system/navigation_bar/navigation_bar"/>
