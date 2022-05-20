@@ -10,20 +10,8 @@
     <view class="ws_content">中鱼 & 水：{{minMedium + waterWeight}} ~ {{maxMedium + waterWeight}} 斤</view>
     <view class="ws_content">大鱼 & 水：{{minLarge + waterWeight}}斤{{maxLarge}}</view>
   </view>
-  <view style="height: 150rpx;"></view>
 </scroll-view>
 
-<view class="navigationBar">
-  <button class="navigationButton" style="width: 185rpx;" bindtap="environment_data">
-    <text class="navigate_buttontext">湿温\n检测仪</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="classification_management">
-    <text class="navigate_buttontext">分类\n计数仓</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="systematic_management">
-    <text class="navigate_buttontext">渔场\n监控室</text>
-  </button>
-  <button class="navigationButton" style="width: 185rpx;" bindtap="urgent_management">
-    <text class="navigate_buttontext">紧急\n处理器</text>
-  </button>
-</view>
+<view style="height: 150rpx;"></view>
+
+<include src="/pages/management_system/navigation_bar/navigation_bar"/>

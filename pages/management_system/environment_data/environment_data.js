@@ -43,7 +43,6 @@ Page({
     })
     wx.hideNavigationBarLoading();
     wx.stopPullDownRefresh();
-    wx.getSuggestion();
   },
 
   onLoad: function () {

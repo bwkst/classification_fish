@@ -1,7 +1,7 @@
 <view class="index_title">商户版渔场管理系统</view>
 
 <scroll-view scroll-y>
-  <button class="index_button_major ib_1" bindtap="environment_data" style="width: 600rpx;">
+  <button class="index_button_major ib_1" bindtap="environment_data" style="width: 600rpx">
     <image class="index_image ii_1" src="../img/EM.png"></image>
     <text class="index_buttontext">湿温检测仪</text>
     <image class="ibi ibi_1" src="../img/ib_1.png"></image>

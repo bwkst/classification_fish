@@ -9,7 +9,8 @@
     "pages/communication_center/forum_center/forum_center",
     "pages/communication_center/login/login",
     "pages/communication_center/post_forum/post_forum",
-    "pages/communication_center/area_of_member/area_of_member"
+    "pages/communication_center/area_of_member/area_of_member",
+    "pages/management_system/navigation_bar/navigation_bar"
   ],
   "window": {
     "backgroundColor": "#fff",

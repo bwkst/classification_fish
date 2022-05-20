@@ -1,0 +1,14 @@
+<cover-view class="navigationBar">
+  <button class="navigationButton" style="width: 187rpx; " bindtap="environment_data">
+    <text class="navigate_buttontext">湿温\n检测仪</text>
+  </button>
+  <button class="navigationButton" style="width: 187rpx;" bindtap="classification_management">
+    <text class="navigate_buttontext">分类\n计数仓</text>
+  </button>
+  <button class="navigationButton" style="width: 187rpx;" bindtap="systematic_management">
+    <text class="navigate_buttontext">渔场\n监控室</text>
+  </button>
+  <button class="navigationButton" style="width: 187rpx; border-right: 0rpx;" bindtap="urgent_management">
+    <text class="navigate_buttontext">紧急\n处理器</text>
+  </button>
+</cover-view>
