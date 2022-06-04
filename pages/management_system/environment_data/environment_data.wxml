@@ -29,7 +29,7 @@
   </view>
 
   <view class="stitle">鱼的种类</view>
-  <input placeholder="请输入鱼的种类" bindinput="breed" class="ed_breed"/>
+  <input placeholder="请输入鱼的种类" placeholder-style="z-index: -1;" bindinput="breed" class="ed_breed"/>
 
   <view class="stitle">专家建议</view>
   <view class="ed_expertise">{{expertise_content}}</view>

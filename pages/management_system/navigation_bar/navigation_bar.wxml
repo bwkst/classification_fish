@@ -1,4 +1,4 @@
-<cover-view class="navigationBar">
+<view class="navigationBar">
   <button class="navigationButton" style="width: 187rpx; " bindtap="environment_data">
     <text class="navigate_buttontext">湿温\n检测仪</text>
   </button>
@@ -11,4 +11,4 @@
   <button class="navigationButton" style="width: 187rpx; border-right: 0rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急\n处理器</text>
   </button>
-</cover-view>
+</view>
