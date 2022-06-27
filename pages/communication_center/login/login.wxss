@@ -1,46 +1,34 @@
-page{
-  background-color: #E0ECDE;
+.cc_authorize {
+  width: 70%;
+  height: 300rpx;
+  margin: 350rpx 15% 20rpx 15%;
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
-}
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-page{
-  background-color: #E0ECDE;
-}
-.size{
-  display: flex;
-  justify-content: center;
-}
-.font{
-  font-family: cursive;
-  font-size: 100rpx;
-  color: #264841;
-  margin-left: 10%;
-  margin-top: 30%;
-}
-.img{
-  width: 280rpx;
-  height: 280rpx;
-  margin-top: 45%;
-}
-.login{
+.cc_authorizeButton {
+  width: 70%;
+  height: fit-content;
+  margin: 0rpx 15% 20rpx 15%;
+  align-content: center;
+  text-align: center;
+  border-radius: 15rpx;
+  font-size: 1.3rem;
+  font-weight: bold;
   background: linear-gradient(135deg,#90C899 10%, #90C8BD 50%, #5CC9B3);
-  margin-top: 30%;
+  color: black;
 }
 
+.cc_line {
+  margin-top: 50rpx;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #999999;
+}
+
+.cc_reminder {
+  width: 92%;
+  text-align: center;
+  margin: 10rpx auto auto auto;
+  font-size: 1rem;
+  font-weight: 10rpx;
+  color: #999999;
+}

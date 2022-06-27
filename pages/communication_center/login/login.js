@@ -1,16 +1,10 @@
 const app = getApp()
 Page({
-  //wx.getSetting
-  //wx.login
-  //授权登录
-  //独有的钥匙 -> 登录信息
-  //设计配合本身小程序设计，颜色在其他页面找到
-  //登录、授权成功 -> 跳转页面 forum_center
-
   data: {
     userInfo: null,
     Haslogin: null
   },
+
   onLoad(options) {
     var that = this
     that.setData({
@@ -23,6 +17,7 @@ Page({
       })
     }
   },
+
   //用户授权获取信息
   login() {
     var that = this
@@ -35,8 +30,6 @@ Page({
         that.setData({
           userInfo: user
         })
-        //储存用户数据至云数据库
-        //检查数据库是否存在用户数据
         wx.cloud.database().collection('users').where({
           _openid: app.globalData.openid
         }).get({
@@ -77,6 +70,5 @@ Page({
     this.setData({
       userInfo: app.globalData.userInfo
     })
-
   },
 })

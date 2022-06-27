@@ -1,5 +1,9 @@
-<view wx:if="{{!Haslogin}}" class="font">欢迎登录论坛</view>
-<view class="size">
-<image wx:if="{{!Haslogin}}" class="img" src="../../img/fish.png" mode="scaleToFill"></image>
+<view wx:if="{{!Haslogin}}" class='cc_authorize'>
+  <button class='cc_authorizeButton' bindtap="login" open-type="getUserProfile">授权登录</button>
+  <view class='cc_line'>————— · —————</view>
+  <view class='cc_reminder'>欢迎使用时鱼论坛！</view>
+  <view class='cc_reminder'>我们需要一些您的公开信息</view>
+  <view class='cc_reminder'>包括微信昵称、头像等</view>
+  <view class='cc_reminder'>请放心，我们会妥善保管您的信息!</view>
+
 </view>
-<button wx:if="{{!Haslogin}}" class="login" bindtap="login">授权登录</button>
