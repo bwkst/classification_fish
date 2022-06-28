@@ -47,7 +47,7 @@ Page({
           fOpenId: getApp().globalData.openid,
           fIconURL: getApp().globalData.userInfo.avatarUrl,
           fUserName: getApp().globalData.userInfo.nickName,
-          likeOpenId: ""
+          likeOpenId: []
         }
       })
       .then(res => {

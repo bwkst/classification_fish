@@ -30,6 +30,14 @@ Page({
         that.setData({
           userInfo: user
         })
+        wx.cloud.database().collection('forum').where({
+          fOpenId: getApp().globalData.openid
+        }).update({
+          data: {
+            fIconURL: getApp().globalData.userInfo.avatarUrl,
+            fUserName: getApp().globalData.userInfo.nickName,
+          },
+        })
         wx.cloud.database().collection('users').where({
           _openid: app.globalData.openid
         }).get({

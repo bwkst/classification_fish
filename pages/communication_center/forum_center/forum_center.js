@@ -1,3 +1,6 @@
+var newArray;
+var newlikeNo;
+
 Page({
   data: {
     likeStatus: "未点赞",
@@ -21,7 +24,10 @@ Page({
     })
   },
 
-  onLoad: function (options) {
+  onLoad: function () {
+    this.setData({
+      datalist: [],
+    })
     this.getData();
   },
 
@@ -32,12 +38,62 @@ Page({
   },
 
   clickLike: function (e) {
-    this.setData({
-      likeStatus: "已点赞",
+    var that = this;
+    wx.cloud.database().collection('forum')
+      .where({
+        _id: e.currentTarget.id
+      })
+      .get()
+      .then(res => {
+        for (let i = 0; i < res.data[0].likeNo; i++) {
+          if (res.data[0].likeOpenId[i] == getApp().globalData.openid) {
+            wx.showModal({
+              content: '已经点赞过了',
+              showCancel: false
+            })
+            that.setData({
+              likeStatus: "已点赞",
+            })
+          } else {
+          }
+        }
+        if (that.data.likeStatus == "已点赞") {
+          that.setData({
+            likeStatus: "未点赞",
+          })
+        } else if (that.data.likeStatus == "未点赞") {
+          newArray = res.data[0].likeOpenId;
+          newlikeNo = res.data[0].likeNo + 1;
+          for (let i = res.data[0].likeNo; i < res.data[0].likeNo + 1; i++) {
+            newArray[i] = getApp().globalData.openid;
+          }
+          that.updateLike(e);
+        }
+      })
+  },
+
+  updateLike: function (e) {
+    var that = this;
+    wx.cloud.database().collection('forum')
+      .where({
+        _id: e.currentTarget.id
+      })
+      .update({
+        data: {
+          likeOpenId: newArray,
+          likeNo: newlikeNo
+        }
+      });
+    that.setData({
+      likeStatus: "未点赞",
+    })
+    wx.showModal({
+      content: '你的点赞即将送达~',
+      showCancel: false
     })
   },
 
-  cancelLike: function () {
+  NUcancelLike: function () {
     this.setData({
       likeStatus: "未点赞",
     })
