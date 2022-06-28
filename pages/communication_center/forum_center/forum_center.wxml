@@ -1,1 +1,17 @@
 <view>论坛主页</view>
+
+<view style="height: 200rpx"></view>
+<view class="cc_navigationBar">
+  <button class="cc_navigationButton" style="width: 250rpx;">
+    <image src="../../images/indexC.png" class="cc_navigationImage"></image>
+    <text class="cc_navigate_buttontext">主页</text>
+  </button>
+  <button class="cc_navigationButton" style="width: 250rpx;" bindtap="postForumPage">
+    <image src="../../images/postNC.png" class="cc_navigationImage"></image>
+    <text class="cc_navigate_buttontext">发布</text>
+  </button>
+  <button class="cc_navigationButton" style="width: 250rpx;" bindtap="areaOfMemberPage">
+    <image src="../../images/centerNC.png" class="cc_navigationImage"></image>
+    <text class="cc_navigate_buttontext">个人中心</text>
+  </button>
+</view>
