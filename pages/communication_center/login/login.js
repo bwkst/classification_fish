@@ -66,9 +66,10 @@ Page({
       }
     })
   },
+
   onShow() {
     this.setData({
       userInfo: app.globalData.userInfo
     })
-  },
+  }
 })

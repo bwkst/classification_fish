@@ -13,6 +13,10 @@ Page({
     wx.setStorageSync('Haslogin', true)
   },
 
+  updateInfo: function(){
+
+  },
+
   //退出登录并记录状态
   logout() {
     getApp().globalData.userInfo = null
