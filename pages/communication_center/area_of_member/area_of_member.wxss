@@ -44,13 +44,13 @@ page{
 .ccc_centerLastPart {
   display: flex;
   flex-direction: column;
-  margin: 45rpx 30rpx 40rpx 0rpx;
+  margin: 50rpx 30rpx 40rpx 0rpx;
   width: 300rpx;
 }
 
 
 .ccc_editInfo {
-  margin: 25rpx 0rpx 0rpx 50rpx;
+  margin: 20rpx 0rpx 0rpx 50rpx;
   font-size: 0.9rem;
   width: fit-content;
   align-items: center;
