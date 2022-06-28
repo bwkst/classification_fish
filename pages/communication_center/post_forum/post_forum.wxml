@@ -1,5 +1,5 @@
 <view class='ccpf_textarea'>
-   <textarea placeholder="请输入内容" placeholder-style="color:#888888; font-size: 1.2rem" class='ccpf_textContent' bindinput ="inputContent"></textarea>
+   <textarea placeholder="请输入内容" placeholder-style="color:#888888; font-size: 1.2rem" class='ccpf_textContent' bindinput ="inputContent" maxlength="-1"></textarea>
 </view>
 <view class='ccpf_clickButton' wx:if='{{submitStatus=="不可发布"}}' style="background: linear-gradient(135deg,#B0E0E6 90%, #B0E0E6); color: white;">发布</view>
 <view class='ccpf_clickButton' wx:if='{{submitStatus=="可发布"}}'  bindtap='postForum'>发布</view>
