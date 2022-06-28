@@ -8,6 +8,7 @@ Page({
     fOpenId: "",
     fIconURL: "",
     fUserName: "",
+    likeOpenId: "",
   },
 
   inputContent: function (e) {
@@ -32,7 +33,7 @@ Page({
   getTime: function () {
     console.log(new Date().toLocaleDateString());
     console.log(new Date().toLocaleTimeString());
-    fTime = new Date().toLocaleDateString() + new Date().toLocaleTimeString()
+    fTime = new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString()
   },
 
   addForum: function () {
@@ -46,6 +47,7 @@ Page({
           fOpenId: getApp().globalData.openid,
           fIconURL: getApp().globalData.userInfo.avatarUrl,
           fUserName: getApp().globalData.userInfo.nickName,
+          likeOpenId: ""
         }
       })
       .then(res => {

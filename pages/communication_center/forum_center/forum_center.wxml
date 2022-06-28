@@ -1,6 +1,26 @@
-<view>论坛主页</view>
+<scroll-view class='cc_mainFrame' scroll-y='true'>
+  <block wx:for="{{datalist}}" wx:key="index">
+    <view class='cc_forumBlock'>
+      <view class='cc_firstBlock'>
+        <image class='cc_iconPhoto' src='{{item.fIconURL}}'></image>
+        <view class='cc_nameAndTime'>
+          <view class='cc_userName'>{{item.fUserName}}</view>
+          <view class='cc_postTime'>{{item.fTime}}</view>
+        </view>
+      </view>
+      <view class='cc_secondBlock'>
+        <view class='cc_content'>{{item.content}}</view>
+      </view>
+      <view class='cc_thirdBlock'>
+        <image wx:if='{{likeStatus=="未点赞"}}' bindtap="clickLike"  id="{{item._id}}" class='cc_like' src='../../images/like.png'/>
+        <image wx:if='{{likeStatus=="已点赞"}}' bindtap="cancelLike"  id="{{item._id}}" class='cc_like' src='../../images/liked.png'/>
+        <text class='cc_likeNum'>{{item.likeNo}}</text>
+      </view>
+    </view>
+  </block>
+</scroll-view>
 
-<view style="height: 200rpx"></view>
+<view style="height: 120rpx"></view>
 <view class="cc_navigationBar">
   <button class="cc_navigationButton" style="width: 250rpx;">
     <image src="../../images/indexC.png" class="cc_navigationImage"></image>
