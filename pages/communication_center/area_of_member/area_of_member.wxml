@@ -15,6 +15,20 @@
 </view>
 
 
+
+<scroll-view class='ccc_mainFrame' scroll-y='true'>
+  <block wx:for="{{datalist}}" wx:key="index">
+    <view class='ccc_forumBlock'>
+      <view class='ccc_firstBlock'>{{item.fTime}}</view>
+      <view class='ccc_secondBlock'>{{item.content}}</view>
+      <button class="ccc_thirdBlock" style="width: 610rpx;" bindtap="deleteForum" data-index="{{item._id}}">删除</button>
+    </view>
+  </block>
+</scroll-view>
+
+
+
+
 <view style="height: 200rpx"></view>
 <view class="cc_navigationBar">
   <button class="cc_navigationButton" style="width: 250rpx;" bindtap="forumCenterPage">

@@ -1,7 +1,10 @@
+const db = wx.cloud.database()
+
 Page({
   data: {
     iconURL: '',
     nickName: '',
+    datalist: "",
   },
 
   //获取到用户的头像、昵称
@@ -11,11 +14,23 @@ Page({
       iconURL: getApp().globalData.userInfo.avatarUrl
     })
     wx.setStorageSync('Haslogin', true)
-    console.log(getApp().globalData.userInfo )
+    console.log(getApp().globalData.userInfo)
+
+    var that = this;
+    db.collection('forum').where({
+      fOpenId: getApp().globalData.openid
+    })
+      .get({
+        success: function (res) {
+          that.setData({
+            datalist: res.data.reverse(),
+          })
+        }
+      })
   },
 
-  updateInfo: function(){
-    var that = this
+  updateInfo: function () {
+    var that = this;
     wx.getUserProfile({
       desc: '须进行授权方可继续使用',
       success: res => {
@@ -23,30 +38,44 @@ Page({
         wx.setStorageSync('Haslogin', true)
         wx.setStorageSync('userInfo', res.userInfo)
         var user = res.userInfo
-        getApp().globalData.userInfo = user
-        
+        getApp().globalData.userInfo = user;
         that.setData({
           userInfo: user
         })
-    wx.cloud.database().collection('users').where({
-      _openid:getApp().globalData.openid
-    }).update({
-      data:{
-        avatarUrl: getApp().globalData.userInfo.avatarUrl,
-        nickName: getApp().globalData.userInfo.nickName,
-      },
-      success: res => {
-        setTimeout(function(){
-          wx.showToast({
-            title: '更新成功',
-          })
-          that.onLoad()
-        },2000);
-        clearTimeout();
+        wx.cloud.database().collection('users').where({
+          _openid: getApp().globalData.openid
+        }).update({
+          data: {
+            avatarUrl: getApp().globalData.userInfo.avatarUrl,
+            nickName: getApp().globalData.userInfo.nickName,
+          },
+          success: res => {
+            setTimeout(function () {
+              that.onLoad()
+              wx.showToast({
+                title: '更新成功',
+              })
+            }, 1000);
+            clearTimeout();
+          },
+          fail: (res) => {
+            console.log(res);
+          }
+        })
       }
     })
-    }
-  })
+  },
+
+  deleteForum: function(e){
+    console.log('删除函数运行')
+    console.log(e.currentTarget.dataset.index)
+    var that=this; 
+    //删除云端记录
+    db.collection('forum').doc(e.currentTarget.dataset.index).remove({
+      success: function(res) {
+        that.onLoad();
+      }
+    })
   },
 
   //退出登录并记录状态

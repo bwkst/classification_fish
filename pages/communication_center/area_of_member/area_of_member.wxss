@@ -62,3 +62,55 @@ page{
   background: linear-gradient(135deg,#90C899 10%, #90C8BD 50%, #5CC9B3);
   color: black;
 }
+
+
+.ccc_mainFrame{
+  background-color: #E0ECDE;
+  width: 86%;
+  height: 100%;
+  margin: 50rpx 7% 20rpx 7%;
+  padding: 12rpx;
+}
+
+.ccc_forumBlock{
+  width: 96%;
+  align-items: center;
+  margin: 0rpx 0rpx 30rpx 0rpx;
+  background-color: white;
+  padding: 20rpx 0rpx 0rpx 0rpx;
+  border: 5rpx solid #264841;
+  border-radius: 20rpx;
+}
+
+.ccc_firstBlock{
+  height: fit-content;
+  width: 90%;
+  margin: 5rpx 5% 10rpx 5%;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.ccc_secondBlock{
+  height: fit-content;
+  margin: 10rpx 3% 10rpx 3%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0rpx 5% 50rpx 5%;
+  font-size: 0.9rem;
+  color: black;
+  word-break: break-all;
+  border-bottom: 5rpx solid #888888;
+}
+
+.ccc_thirdBlock{
+  height: fit-content;
+  width: 100%;
+  margin: 5rpx;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
