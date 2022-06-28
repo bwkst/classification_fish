@@ -1,1 +1,32 @@
-/* pages/communication_center/post_forum/post_forum.wxss */
+page{
+  background-color: #E0ECDE;
+}
+
+.ccpf_textarea{
+  width: 76%;
+  height: 800rpx;
+  margin: 50rpx 7% 20rpx 7%;
+  padding: 5%;
+  align-items: center;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+}
+
+.ccpf_textContent{
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.ccpf_clickButton{
+  width: 86%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+  margin: 70rpx 8% 0rpx 8%;
+  background: linear-gradient(135deg,#90C899 10%, #90C8BD 50%, #5CC9B3);
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+}

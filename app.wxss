@@ -125,3 +125,34 @@
   font-style: normal;
   font-display: swap;
 }
+
+.cc_navigationBar {
+  z-index: 1;
+  height: fit-content;
+  background-color: #90C8BD;
+  display: flex;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  padding: 5rpx;
+}
+
+.cc_navigationButton {
+  background-color: #90C8BD;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.cc_navigate_buttontext {
+  margin: 5rpx;
+  font-size: 0.9rem;
+  color: #264841;
+}
+
+.cc_navigationImage {
+  width: 50rpx;
+  height: 50rpx;
+}

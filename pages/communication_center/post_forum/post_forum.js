@@ -1,66 +1,87 @@
-// pages/communication_center/post_forum/post_forum.js
+var fTime;
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    submitStatus: "不可发布",
+    content: "",
+    likeNo: "",
+    fOpenId: "",
+    fIconURL: "",
+    fUserName: "",
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  inputContent: function (e) {
+    this.setData({
+      content: e.detail.value,
+    })
+    this.haveChange();
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  haveChange: function () {
+    if (this.data.content == "") {
+      this.setData({
+        submitStatus: "不可发布",
+      })
+    } else {
+      this.setData({
+        submitStatus: "可发布",
+      })
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  getTime: function () {
+    console.log(new Date().toLocaleDateString());
+    console.log(new Date().toLocaleTimeString());
+    fTime = new Date().toLocaleDateString() + new Date().toLocaleTimeString()
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  addForum: function () {
+    var that = this;
+    wx.cloud.database().collection('forum')
+      .add({
+        data: {
+          content: this.data.content,
+          likeNo: 0,
+          fTime: fTime,
+          fOpenId: getApp().globalData.openid,
+          fIconURL: getApp().globalData.userInfo.avatarUrl,
+          fUserName: getApp().globalData.userInfo.nickName,
+        }
+      })
+      .then(res => {
+        console.log('添加成功')
+        wx.hideLoading({
+          success: () => {
+            that.forumCenterPage();
+          },
+        })
+      })
+      .catch(err => {
+        console.log('添加失败', err)
+      })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
+  postForum: function () {
+    var that = this;
+    that.getTime();
+    wx.showLoading({
+      title: '发布中',
+    });
+    setTimeout(function () {
+      that.addForum();
+    }, 2000);
+    clearTimeout();
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
+  forumCenterPage: function () {
+    wx.redirectTo({
+      url: '../forum_center/forum_center',
+    })
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  areaOfMemberPage: function () {
+    wx.redirectTo({
+      url: '../area_of_member/area_of_member',
+    })
   }
 })
