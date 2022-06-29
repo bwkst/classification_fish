@@ -31,9 +31,7 @@ Page({
   },
 
   getTime: function () {
-    console.log(new Date().toLocaleDateString());
-    console.log(new Date().toLocaleTimeString());
-    fTime = new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString()
+    fTime = String(new Date().getFullYear()) + "/" + String(new Date().getMonth() + 1) + "/" + String(new Date().getDate()) + " - " + String(new Date().getHours()) + ":" + String(new Date().getMinutes()) + ":" + String(new Date().getSeconds())
   },
 
   addForum: function () {
