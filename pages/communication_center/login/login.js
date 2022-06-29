@@ -12,7 +12,7 @@ Page({
       Haslogin: wx.getStorageSync('Haslogin')
     })
     if (that.data.Haslogin) {
-      wx.navigateTo({
+      wx.redirectTo({
         url: '../forum_center/forum_center',
       })
     }
@@ -62,9 +62,8 @@ Page({
             }
           },
         })
-
         setTimeout(function () {
-          wx.navigateTo({
+          wx.redirectTo({
             url: '../forum_center/forum_center',
           })
         }, 100)
