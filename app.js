@@ -6,7 +6,7 @@ App({
 
   onLaunch(){
     wx.cloud.init({
-      evn:"cloud1-9gzhqnbp0f2610b4",
+      evn:"cloud1-4gt56a6sac508a36",
       traceUser:true
     })
     this.getOpenid();
