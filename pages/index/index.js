@@ -1,4 +1,23 @@
+var forumS;
+
 Page({
+  data: {
+    forumStatus: ""
+  },
+
+  onLoad: function () {
+    wx.cloud.database().collection('status')
+      .get()
+      .then(res => {
+        console.log(res)
+        forumS = res.data[0].forumS;
+        if (forumS == "normal") {
+          this.setData({
+            forumStatus: "normal"
+          })
+        }
+      })
+  },
   
   environment_data: function(){
     wx.navigateTo({

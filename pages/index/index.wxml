@@ -7,21 +7,21 @@
     <image class="ibi ibi_1" src="../img/ib_1.png"></image>
   </button>
 
-  <button class="index_button_major ib_2" bindtap='classification_management' style="width: 600rpx;">   
+  <button class="index_button_major ib_2" bindtap='classification_management' style="width: 600rpx;">
     <text class="index_buttontext">分类计数仓</text>
     <image class="index_image ii_2" src="../img/CM.png"></image>
     <image class="ibi ibi_2" src="../img/ib_2.png"></image>
   </button>
 
   <button class="index_button_major ib_1" bindtap='systematic_management' style="width: 600rpx;">
-    <image class="index_image ii_1"  src="../img/SM.png"></image>
+    <image class="index_image ii_1" src="../img/SM.png"></image>
     <text class="index_buttontext">渔场监控室</text>
     <image class="ibi ibi_1" src="../img/ib_3.png"></image>
   </button>
 
   <button class="index_button_major ib_2" bindtap="urgent_management" style="width: 600rpx;">
-    <text class = "index_buttontext">紧急处理器</text>
-    <image class="index_image ii_2" src="../img/UM.png"/>
+    <text class="index_buttontext">紧急处理器</text>
+    <image class="index_image ii_2" src="../img/UM.png" />
     <image class="ibi ibi_2" src="../img/ib_4.png"></image>
   </button>
 
@@ -36,12 +36,13 @@
     </button>
   </view>
   -->
-  
-  <button class="index_button_major ib_4" bindtap="communication_center" style="width: 600rpx; border: 7rpx dashed #005213;">
-    <text class = "index_buttontext">交流广场</text>
-    <image class="index_image ii_1"  src="../img/CCL.png"></image>
-    <image class="index_image ii_2" src="../img/CCR.png"></image>
-  </button>
+  <view wx:if='{{forumStatus == "normal"}}'>
+    <button class="index_button_major ib_4" bindtap="communication_center" style="width: 600rpx; border: 7rpx dashed #005213;">
+      <text class="index_buttontext">交流广场</text>
+      <image class="index_image ii_1" src="../img/CCL.png"></image>
+      <image class="index_image ii_2" src="../img/CCR.png"></image>
+    </button>
+  </view>
 
 </scroll-view>
 
