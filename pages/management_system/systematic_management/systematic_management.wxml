@@ -21,19 +21,19 @@
 
   <view wx:if='{{videoStatus == "normal"}}'>
     <view wx:if='{{selectStatus == "normal"}}' class="n_video">
-      <video src="cloud://cloud1-4gt56a6sac508a36.636c-cloud1-4gt56a6sac508a36-1312736556/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
+      <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
     </view>
 
     <view wx:elif='{{selectStatus == "large"}}' class="video">
-      <video src="cloud://cloud1-4gt56a6sac508a36.636c-cloud1-4gt56a6sac508a36-1312736556/large.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 500rpx; height: 700rpx;"></video>
+      <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/large.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 500rpx; height: 700rpx;"></video>
     </view>
 
     <view wx:elif='{{selectStatus == "medium"}}' class="video">
-      <video src="cloud://cloud1-4gt56a6sac508a36.636c-cloud1-4gt56a6sac508a36-1312736556/medium.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
+      <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/medium.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
     </view>
 
     <view wx:elif='{{selectStatus == "small"}}' class="video">
-      <video src="cloud://cloud1-4gt56a6sac508a36.636c-cloud1-4gt56a6sac508a36-1312736556/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
+      <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
     </view>
   </view>
 </scroll-view>
