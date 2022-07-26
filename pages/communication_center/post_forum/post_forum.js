@@ -31,7 +31,33 @@ Page({
   },
 
   getTime: function () {
-    fTime = String(new Date().getFullYear()) + "/" + String(new Date().getMonth() + 1) + "/" + String(new Date().getDate()) + " - " + String(new Date().getHours()) + ":" + String(new Date().getMinutes()) + ":" + String(new Date().getSeconds())
+    var fMonth = String(new Date().getMonth() + 1);
+    var fDate = String(new Date().getDate());
+    var fHour = String(new Date().getHours());
+    var fMinute = String(new Date().getMinutes());
+    var fSecond = String(new Date().getSeconds());
+
+    if (fMonth < 10) {
+      fMonth = "0" + String(new Date().getMonth() + 1); 
+    };
+
+    if (fDate < 10) {
+      fDate = "0" + String(new Date().getDate()); 
+    };
+
+    if (fHour < 10) {
+      fHour = "0" + String(new Date().getHours()); 
+    };
+
+    if (fMinute < 10) {
+      fMinute = "0" + String(new Date().getMinutes()); 
+    };
+
+    if (fSecond < 10) {
+      fSecond = "0" + String(new Date().getSeconds()); 
+    }
+
+    fTime = String(new Date().getFullYear()) + "/" + fMonth + "/" + fDate + " - " + fHour + ":" + fMinute + ":" + fSecond;
   },
 
   addForum: function () {
