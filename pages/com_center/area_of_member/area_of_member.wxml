@@ -1,0 +1,50 @@
+<view wx:if='{{comCenterStatus == "show"}}'>
+  <view class="ccc_centerPersonalInfo">
+    <view>
+      <image src="{{iconURL}}" class="ccc_centerIcon"></image>
+    </view>
+
+    <view class="ccc_centerMiddlePart">
+      <view class="ccc_centerNickName">{{nickName}}</view>
+      <view class="ccc_editInfo" bindtap="updateInfo">更新授权</view>
+    </view>
+
+    <view class="ccc_centerLastPart">
+      <view class="ccc_editInfo" bindtap="logout">退出登录</view>
+    </view>
+
+  </view>
+
+
+
+  <scroll-view class='ccc_mainFrame' scroll-y='true'>
+    <block wx:for="{{datalist}}" wx:key="index">
+      <view class='ccc_forumBlock'>
+        <view class='ccc_firstBlock'>{{item.fTime}}</view>
+        <view class='ccc_secondBlock'>{{item.content}}</view>
+        <button class="ccc_thirdBlock" style="width: 610rpx;" bindtap="deleteForum" data-index="{{item._id}}">删除</button>
+      </view>
+    </block>
+  </scroll-view>
+
+
+
+
+  <view style="height: 200rpx"></view>
+  <view class="cc_navigationBar">
+    <button class="cc_navigationButton" style="width: 250rpx;" bindtap="forumCenterPage">
+      <image src="../../images/indexNC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">主页</text>
+    </button>
+    <button class="cc_navigationButton" style="width: 250rpx;" bindtap="postForumPage">
+      <image src="../../images/postNC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">发布</text>
+    </button>
+    <button class="cc_navigationButton" style="width: 250rpx;">
+      <image src="../../images/centerC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">个人中心</text>
+    </button>
+  </view>
+</view>
+
+<view wx:if='{{comCenterStatus == "12"}}'></view>

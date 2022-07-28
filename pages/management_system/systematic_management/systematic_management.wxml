@@ -19,7 +19,7 @@
     </button>
   </view>
 
-  <view wx:if='{{videoStatus == "normal"}}'>
+  <view wx:if='{{videoStatus == "showNL"}}'>
     <view wx:if='{{selectStatus == "normal"}}' class="n_video">
       <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/classify.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
     </view>
@@ -34,6 +34,24 @@
 
     <view wx:elif='{{selectStatus == "small"}}' class="video">
       <video src="cloud://cloud1-0gtkjbbs0a8ea290.636c-cloud1-0gtkjbbs0a8ea290-1312738780/small.mp4" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 500rpx; height: 700rpx;"></video>
+    </view>
+  </view>
+
+  <view wx:if='{{videoStatus == "show"}}'>
+    <view wx:if='{{selectStatus == "normal"}}' class="video" style="margin-left: 25rpx;">
+      <video src="{{normalURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
+    </view>
+
+    <view wx:elif='{{selectStatus == "large"}}' class="video" style="margin-left: 25rpx;">
+      <video src="{{largeURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" enable-progress-gesture="false" show-play-btn="false" style="width: 700rpx;"></video>
+    </view>
+
+    <view wx:elif='{{selectStatus == "medium"}}' class="video" style="margin-left: 25rpx;">
+      <video src="{{mediumURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 700rpx;"></video>
+    </view>
+
+    <view wx:elif='{{selectStatus == "small"}}' class="video" style="margin-left: 25rpx;">
+      <video src="{{smallURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 700rpx;"></video>
     </view>
   </view>
 </scroll-view>

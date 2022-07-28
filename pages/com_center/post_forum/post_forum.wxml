@@ -1,0 +1,24 @@
+<view wx:if='{{comCenterStatus == "12"}}'></view>
+<view wx:if='{{comCenterStatus == "show"}}'>
+  <view class='ccpf_textarea'>
+    <textarea placeholder="请输入内容" placeholder-style="color:#888888; font-size: 1.2rem" class='ccpf_textContent' bindinput="inputContent" maxlength="-1"></textarea>
+  </view>
+  <view class='ccpf_clickButton' wx:if='{{submitStatus=="不可发布"}}' style="background: linear-gradient(135deg,#B0E0E6 90%, #B0E0E6); color: white;">发布帖子</view>
+  <view class='ccpf_clickButton' wx:if='{{submitStatus=="可发布"}}' bindtap='postForum'>发布帖子</view>
+
+  <view style="height: 200rpx"></view>
+  <view class="cc_navigationBar">
+    <button class="cc_navigationButton" style="width: 250rpx;" bindtap="forumCenterPage">
+      <image src="../../images/indexNC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">主页</text>
+    </button>
+    <button class="cc_navigationButton" style="width: 250rpx;">
+      <image src="../../images/postC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">发布</text>
+    </button>
+    <button class="cc_navigationButton" style="width: 250rpx;" bindtap="areaOfMemberPage">
+      <image src="../../images/centerNC.png" class="cc_navigationImage"></image>
+      <text class="cc_navigate_buttontext">个人中心</text>
+    </button>
+  </view>
+</view>

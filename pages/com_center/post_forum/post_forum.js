@@ -9,7 +9,20 @@ Page({
     fIconURL: "",
     fUserName: "",
     likeOpenId: "",
+    comCenterStatus: ""
   },
+
+  onLoad: function () {
+    wx.cloud.database().collection('status')
+    .get()
+    .then(res => {
+      console.log(res)
+      this.setData({
+        comCenterStatus: res.data[0].comCenterS
+      })
+    })
+  },
+
 
   inputContent: function (e) {
     this.setData({

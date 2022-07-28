@@ -5,10 +5,19 @@ Page({
     iconURL: '',
     nickName: '',
     datalist: "",
+    comCenterStatus: ""
   },
 
   //获取到用户的头像、昵称
   onLoad(options) {
+    wx.cloud.database().collection('status')
+    .get()
+    .then(res => {
+      console.log(res)
+      this.setData({
+        comCenterStatus: res.data[0].comCenterS
+      })
+    })
     this.setData({
       nickName: getApp().globalData.userInfo.nickName,
       iconURL: getApp().globalData.userInfo.avatarUrl

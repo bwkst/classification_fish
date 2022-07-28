@@ -31,13 +31,13 @@
       <text class="index_buttontext_2">订单管理</text>
     </button>
 
-    <button class="index_button_major_2 ib_4" bindtap="communication_center" style="width: 275rpx;">
+    <button class="index_button_major_2 ib_4" bindtap="com_center" style="width: 275rpx;">
       <text class="index_buttontext_2">交流广场</text>
     </button>
   </view>
   -->
-  <view wx:if='{{forumStatus == "normal"}}'>
-    <button class="index_button_major ib_4" bindtap="communication_center" style="width: 600rpx; border: 7rpx dashed #005213;">
+  <view wx:if='{{forumStatus == "show"}}'>
+    <button class="index_button_major ib_4" bindtap="com_center" style="width: 600rpx; border: 7rpx dashed #005213;">
       <text class="index_buttontext">交流广场</text>
       <image class="index_image ii_1" src="../img/CCL.png"></image>
       <image class="index_image ii_2" src="../img/CCR.png"></image>

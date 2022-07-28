@@ -5,6 +5,7 @@ Page({
   data: {
     likeStatus: "未点赞",
     datalist: [],
+    comCenterStatus: ""
   },
 
   getData(num = 5, page = 0) {
@@ -25,6 +26,14 @@ Page({
   },
 
   onLoad: function () {
+    wx.cloud.database().collection('status')
+    .get()
+    .then(res => {
+      console.log(res)
+      this.setData({
+        comCenterStatus: res.data[0].comCenterS
+      })
+    })
     this.setData({
       datalist: [],
     })

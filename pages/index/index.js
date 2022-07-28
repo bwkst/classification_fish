@@ -1,5 +1,3 @@
-var forumS;
-
 Page({
   data: {
     forumStatus: ""
@@ -10,12 +8,9 @@ Page({
       .get()
       .then(res => {
         console.log(res)
-        forumS = res.data[0].forumS;
-        if (forumS == "normal") {
-          this.setData({
-            forumStatus: "normal"
-          })
-        }
+        this.setData({
+          forumStatus: res.data[0].forumS
+        })
       })
   },
   
@@ -49,9 +44,9 @@ Page({
       })
   },
 
-  communication_center: function(){
+  com_center: function(){
     wx.navigateTo({
-      url: '/pages/communication_center/login/login',
+      url: '/pages/com_center/login/login',
     })
   }
 })

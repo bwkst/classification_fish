@@ -2,10 +2,19 @@ const app = getApp()
 Page({
   data: {
     userInfo: null,
-    Haslogin: null
+    Haslogin: null,
+    comCenterStatus: ""
   },
 
   onLoad(options) {
+    wx.cloud.database().collection('status')
+    .get()
+    .then(res => {
+      console.log(res)
+      this.setData({
+        comCenterStatus: res.data[0].comCenterS
+      })
+    })
     var that = this
     that.setData({
       userInfo: app.globalData.userInfo,
