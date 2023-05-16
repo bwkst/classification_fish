@@ -24,8 +24,7 @@
   </view>
 
   <view style="height: 370rpx;">
-    <canvas wx:if='{{statusButton == "湿度"}}' class="canvas" canvas-id="humidity"></canvas>
-    <canvas wx:elif='{{statusButton == "温度"}}' class="canvas" canvas-id="temperature"></canvas>
+    <canvas class="canvas" canvas-id="lineChart"></canvas>
   </view>
 
   <view class="stitle">鱼的种类</view>
