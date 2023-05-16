@@ -7,7 +7,7 @@
   </view>
 
   <view class="contentBorder">
-    <text class="content" style="font-size: 42rpx;">鱼群分类：</text>
+    <text class="content" style="font-size: 40rpx;">鱼群分类：{{fish_classify}}</text>
     <text wx:if='{{fish_classify == "小鱼"}}' class="content" style="font-size: 42rpx;">小鱼</text>
     <text wx:if='{{fish_classify == "中鱼"}}' class="content" style="font-size: 42rpx;">中鱼</text>
     <text wx:if='{{fish_classify == "大鱼"}}' class="content" style="font-size: 42rpx;">大鱼</text>

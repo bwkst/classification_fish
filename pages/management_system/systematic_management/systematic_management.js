@@ -9,18 +9,18 @@ Page({
   },
 
   onLoad: function () {
-    wx.cloud.database().collection('status')
-      .get()
-      .then(res => {
-        console.log(res);
-        this.setData({
-          videoStatus: res.data[0].videoS,
-          normalURL: res.data[0].normalURL,
-          smallURL: res.data[0].smallURL,
-          mediumURL: res.data[0].mediumURL,
-          largeURL: res.data[0].largeURL
-        })
-      })
+    // wx.cloud.database().collection('status')
+    //   .get()
+    //   .then(res => {
+    //     console.log(res);
+    //     this.setData({
+    //       videoStatus: res.data[0].videoS,
+    //       normalURL: res.data[0].normalURL,
+    //       smallURL: res.data[0].smallURL,
+    //       mediumURL: res.data[0].mediumURL,
+    //       largeURL: res.data[0].largeURL
+    //     })
+    //   })
   },
 
   wholeButton: function () {

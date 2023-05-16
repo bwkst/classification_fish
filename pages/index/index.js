@@ -4,14 +4,14 @@ Page({
   },
 
   onLoad: function () {
-    wx.cloud.database().collection('status')
-      .get()
-      .then(res => {
-        console.log(res)
-        this.setData({
-          forumStatus: res.data[0].forumS
-        })
-      })
+    // wx.cloud.database().collection('status')
+    //   .get()
+    //   .then(res => {
+    //     console.log(res)
+    //     this.setData({
+    //       forumStatus: res.data[0].forumS
+    //     })
+    //   })
   },
   
   environment_data: function(){

@@ -1,6 +1,6 @@
-<view class="title">渔场监控室</view>
+<view class="title">渔场监测器</view>
 
-<scroll-view scroll-y="true">
+<!-- <scroll-view scroll-y="true">
   <view class="sm_row">
     <button class="sm_button_major" bindtap="wholeButton" style="width: 135rpx; margin: 0rpx;">
       <text class="filter_text">未分类</text>
@@ -54,7 +54,7 @@
       <video src="{{smallURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 700rpx;"></video>
     </view>
   </view>
-</scroll-view>
+</scroll-view> -->
 
 <view style="height: 150rpx;"></view>
 

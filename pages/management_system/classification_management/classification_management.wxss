@@ -5,11 +5,12 @@ Page{
 @import "/pages/management_system/navigation_bar/navigation_bar";
 
 .standardButton{
-  width: 70rpx;
+  width: 60rpx;
   height: 75rpx;
   align-items: right;
   position: absolute;	
   right: 15%;
+
 }
 
 .fishContainerBorder{

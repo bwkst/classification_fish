@@ -35,37 +35,37 @@ Page({
   },
 
   onPullDownRefresh: function () {
-    wx.showNavigationBarLoading();
-    this.onLoad();
-    this.getDatapoints().then(datapoints => {
-      this.update(datapoints)
-      wx.hideLoading()
-    }).catch((error) => {
-      wx.hideLoading()
-      console.error(error)})
-    wx.hideNavigationBarLoading();
-    wx.stopPullDownRefresh();
+    // wx.showNavigationBarLoading();
+    // this.onLoad();
+    // this.getDatapoints().then(datapoints => {
+    //   this.update(datapoints)
+    //   wx.hideLoading()
+    // }).catch((error) => {
+    //   wx.hideLoading()
+    //   console.error(error)})
+    // wx.hideNavigationBarLoading();
+    // wx.stopPullDownRefresh();
   },
 
   onLoad: function () {
-    console.log(`your deviceId: ${devicesId}, apiKey: ${api_key}`)
-    //每隔1分钟自动获取一次数据进行更新：60000
-    const timer = setInterval(() => {
-      this.getDatapoints().then(datapoints => {
-        this.update(datapoints)
-      })
-    }, 5000)
-    wx.showLoading({
-      title: '加载中'
-    })
-    this.getDatapoints().then((datapoints) => {
-      wx.hideLoading()
-      this.update(datapoints)
-    }).catch((err) => {
-      wx.hideLoading()
-      console.error(err)
-      clearInterval(timer) //首次渲染发生错误时禁止自动刷新
-    })
+    // console.log(`your deviceId: ${devicesId}, apiKey: ${api_key}`)
+    // //每隔1分钟自动获取一次数据进行更新：60000
+    // const timer = setInterval(() => {
+    //   this.getDatapoints().then(datapoints => {
+    //     this.update(datapoints)
+    //   })
+    // }, 500)
+    // wx.showLoading({
+    //   title: '加载中'
+    // })
+    // this.getDatapoints().then((datapoints) => {
+    //   wx.hideLoading()
+    //   this.update(datapoints)
+    // }).catch((err) => {
+    //   wx.hideLoading()
+    //   console.error(err)
+    //   clearInterval(timer) //首次渲染发生错误时禁止自动刷新
+    // })
   },
 
   getDatapoints: function () {

@@ -5,11 +5,11 @@ App({
   },
 
   onLaunch(){
-    wx.cloud.init({
-      evn:"cloud1-0gtkjbbs0a8ea290",
-      traceUser:true
-    })
-    this.getOpenid();
+    // wx.cloud.init({
+    //   evn:"cloud1-0gtkjbbs0a8ea290",
+    //   traceUser:true
+    // })
+    // this.getOpenid();
   },
   
   //获取用户openid
