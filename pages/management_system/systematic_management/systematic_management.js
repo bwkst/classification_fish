@@ -1,3 +1,12 @@
+var myCharts = require("../../../utils/wxcharts.js") //引入一个绘图的插件
+const devicesId1 = "899161544" // devicesId
+const api_key1 = "E=0WdCeJBKGsORZhFxGGW0iaY2Q=" // Api-key 
+const devicesId2 = "996195513" // devicesId
+const api_key2 = "W8PWDxCoGQWaVF46zn4gQYS820Y=" // Api-key 
+const devicesId3 = "996218346" // devicesId
+const api_key3 = "UUTNLzsdIw7e=RZI8rZyAyV9WFQ=" // Api-key 
+
+
 Page({
   data: {
     selectStatus: "normal",

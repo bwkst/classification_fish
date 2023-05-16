@@ -1,6 +1,6 @@
 <view class="navigationBar">
   <button class="navigationButton" style="width: 187rpx;" bindtap="systematic_management">
-    <text class="navigate_buttontext">渔场\n监测器</text>
+    <text class="navigate_buttontext">鱼池\n监测器</text>
   </button>
   <button class="navigationButton" style="width: 187rpx;" bindtap="urgent_management">
     <text class="navigate_buttontext">紧急\n处理器</text>

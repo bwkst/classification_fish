@@ -20,7 +20,7 @@
 }
 
 .navigate_buttontext{
-  font-family: "main_title";
+  font-family: "main_title", "main_title_new";
   font-size: 1.1rem;
   color: #264841;
 }

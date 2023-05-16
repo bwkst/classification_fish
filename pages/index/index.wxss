@@ -6,7 +6,7 @@ Page{
   color: #326F60;
   text-align: center;
   line-height: 80rpx;
-  font-family: "main_title";
+  font-family: "main_title", "main_title_new";
   font-size: 2.1rem;
   margin-top: 50rpx;
   margin-bottom: 50rpx;
@@ -49,7 +49,7 @@ Page{
 }
 
 .index_buttontext{
-  font-family: "index_content";
+  font-family: "index_content", "index_content_new";
   font-size: 1.8rem;
   color: #264841;
 }
@@ -98,7 +98,7 @@ Page{
 }
 
 .index_buttontext_2{
-  font-family: "index_content";
+  font-family: "index_content", "index_content_new";
   font-size: 1.1rem;
   color: #264841;
 }
@@ -107,5 +107,5 @@ Page{
   position: fixed;
   bottom: 38rpx;
   right: 38rpx;
-  font-family: 'index_content';
+  font-family: 'index_content', "index_content_new";
 }

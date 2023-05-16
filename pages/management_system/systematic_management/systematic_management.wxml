@@ -1,4 +1,57 @@
-<view class="title">渔场监测器</view>
+<view class="title">鱼池监测器</view>
+
+<scroll-view scroll-y="true">
+  <view class="ed_row" style="justify-content: center; margin: 0rpx 50rpx 50rpx 50rpx;">
+    <button class="ed_button_major" bindtap="oneButton" style="width: 175rpx; margin: 0rpx">
+      <text class="filter_text">一号鱼池</text>
+    </button>
+
+    <button class="ed_button_major" bindtap="twoButton" style="width: 175rpx; margin: 0rpx">
+      <text class="filter_text">二号鱼池</text>
+    </button> 
+
+    <button class="ed_button_major" bindtap="threeButton" style="width: 175rpx; margin: 0rpx">
+      <text class="filter_text">三号鱼池</text>
+    </button>
+  </view>
+
+  <text class="content" style="display: flex; justify-content: center; margin-bottom: 40rpx;">当前鱼池：{{poolNo}}</text>
+
+  <view class="contentBorder">
+    <text class="content">当前水温：{{waterTemperature}} °C</text>
+    <image class="ed_image edi_1" src="../../img/temperature.png"></image>
+  </view>
+
+  <view class="contentBorder">
+    <text class="content">当前光照：{{Light}} %</text>
+    <image class="ed_image edi_2" src="../../img/light.png"></image>
+  </view>
+
+  <view class="contentBorder">
+    <text class="content">当前水质：{{TDS}} TDS</text>
+    <image class="ed_image edi_1" src="../../img/humidity.png"></image>
+  </view>
+
+  <view class="stitle">变化曲线图</view>
+
+  <view class="ed_row">
+    <button class="ed_button_major" bindtap="temperatureButton" style="width: 140rpx; margin: 0rpx">
+      <text class="filter_text">水温</text>
+    </button>
+
+    <button class="ed_button_major" bindtap="humidityButton" style="width: 140rpx; margin: 0rpx">
+      <text class="filter_text">光照</text>
+    </button>
+  </view>
+
+  <view style="height: 370rpx;">
+    <canvas class="canvas" canvas-id="lineChart"></canvas>
+  </view>
+</scroll-view>
+<view style="height: 200rpx;"></view>
+
+<include src="/pages/management_system/navigation_bar/navigation_bar" />
+
 
 <!-- <scroll-view scroll-y="true">
   <view class="sm_row">
@@ -54,8 +107,10 @@
       <video src="{{smallURL}}" style="width: 600rpx;" autoplay="true" muted="true" loop="ture" style="width: 700rpx;"></video>
     </view>
   </view>
-</scroll-view> -->
+</scroll-view> 
 
 <view style="height: 150rpx;"></view>
 
 <include src="/pages/management_system/navigation_bar/navigation_bar" />
+
+-->

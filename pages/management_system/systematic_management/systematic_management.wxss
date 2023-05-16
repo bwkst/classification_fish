@@ -30,3 +30,65 @@ Page{
   border-radius: 5rpx;
   background: linear-gradient(45deg,  #90C8BD, #C8B990);  
 }
+
+
+Page{
+  background-color: #E0ECDE;
+}
+
+@import "/pages/management_system/navigation_bar/navigation_bar";
+
+.ed_image{
+  width: 75rpx;
+  height: 75rpx;
+  align-items: center;
+}
+
+.edi_1{
+  position: absolute;	
+  right: 15%;
+}
+
+.edi_2{
+  position: absolute;	
+  left: 15%;
+}
+
+.ed_row{
+  margin: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.ed_button_major{
+  padding: 5rpx;
+  height: fit-content;
+  border: 2rpx dashed #264841;
+  border-radius: 5rpx;
+  background: linear-gradient(45deg,  #90C8BD, #C8B990);  
+}
+
+.canvas{
+  margin: 0rpx 37rpx 0rpx 37rpx;
+  width: 90%;
+  height: 370rpx;
+}
+
+.ed_breed{
+  color: #326F60;
+  text-align: left;
+  line-height: fit-content;
+  font-family: "Time New Roman";
+  font-size: 1.2rem;
+  margin: 30rpx 60rpx 10rpx 60rpx;
+}
+
+.ed_expertise{
+  color: #326F60;
+  text-align: left;
+  line-height: fit-content;
+  font-family: "expertise_font";
+  font-size: 1.2rem;
+  margin: 30rpx 60rpx 10rpx 60rpx;
+}

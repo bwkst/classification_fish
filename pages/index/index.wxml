@@ -4,7 +4,7 @@
 
   <button class="index_button_major ib_1" bindtap='systematic_management' style="width: 600rpx;">
     <image class="index_image ii_1" src="../img/SM.png"></image>
-    <text class="index_buttontext">渔场监测器</text>
+    <text class="index_buttontext">鱼池监测器</text>
     <image class="ibi ibi_1" src="../img/ib_3.png"></image>
   </button>
 
@@ -16,7 +16,7 @@
 
   <button class="index_button_major ib_1" bindtap="environment_data" style="width: 600rpx">
     <image class="index_image ii_1" src="../img/EM.png"></image>
-    <text class="index_buttontext">湿温监控器</text>
+    <text class="index_buttontext">湿温检测仪</text>
     <image class="ibi ibi_1" src="../img/ib_1.png"></image>
   </button>
 

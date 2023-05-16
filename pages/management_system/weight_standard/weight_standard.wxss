@@ -8,7 +8,7 @@ Page{
   color:#326F60;
   text-align: center;
   line-height: 30rpx;
-  font-family: "main_title";
+  font-family: "main_title", "main_title_new";
   font-size: 1.8em;
   margin: 65rpx 20rpx 20rpx 20rpx ;
 }
