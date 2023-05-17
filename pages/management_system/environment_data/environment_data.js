@@ -132,31 +132,19 @@ Page({
       this.lineChart.updateData({
         categories: environmentData.categories,
         series: [{
-          name: 'humidity',
+          name: 'Humidity (%)',
           data: environmentData.humidity,
           format: (val, name) => val.toFixed(2)
-        }],
-        yAxis: {
-          title: 'humidity (%)',
-          format: function (val) {
-            return val.toFixed(2);
-          }
-        },
+        }]
       })
     } else if (this.data.statusButton == "温度") {
       this.lineChart.updateData({
         categories: environmentData.categories,
         series: [{
-          name: 'temperature',
+          name: 'Temperature (°C)',
           data: environmentData.temperature,
           format: (val, name) => val.toFixed(2)
-        }],
-        yAxis: {
-          title: 'temperature (摄氏度)',
-          format: function (val) {
-            return val.toFixed(2);
-          }
-        },
+        }]
       })
     }
   },
@@ -202,7 +190,7 @@ Page({
       animation: false,
       background: '#f5f5f5',
       series: [{
-        name: 'temperature',
+        name: 'Temperature (°C)',
         data: environmentData.temperature,
         format: function (val, name) {
           return val.toFixed(2);
@@ -212,7 +200,7 @@ Page({
         disableGrid: true
       },
       yAxis: {
-        title: 'temperature (摄氏度)',
+        title: '',
         format: function (val) {
           return val.toFixed(2);
         }

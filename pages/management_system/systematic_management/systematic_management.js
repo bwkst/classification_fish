@@ -220,31 +220,19 @@ Page({
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '一号鱼池 - Water Temperature',
+            name: '一号鱼池 - Water Temperature (°C)',
             data: environmentData.waterTemperature1,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Water Temperature (摄氏度)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       } else if (this.data.statusButton == "光照") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '一号鱼池 - Illumination',
+            name: '一号鱼池 - Illumination (lux)',
             data: environmentData.Light1,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Illumination (lux)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       }
     } else if (this.data.poolNo == "二号鱼池") {
@@ -252,31 +240,19 @@ Page({
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '二号鱼池 - Water Temperature',
+            name: '二号鱼池 - Water Temperature (°C)',
             data: environmentData.waterTemperature2,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Water Temperature (摄氏度)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       } else if (this.data.statusButton == "光照") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '二号鱼池 - Illumination',
+            name: '二号鱼池 - Illumination (lux)',
             data: environmentData.Light2,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Illumination (lux)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       }
     } else if (this.data.poolNo == "三号鱼池") {
@@ -284,31 +260,19 @@ Page({
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '三号鱼池 - Water Temperature',
+            name: '三号鱼池 - Water Temperature (°C)',
             data: environmentData.waterTemperature3,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Water Temperature (摄氏度)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       } else if (this.data.statusButton == "光照") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
-            name: '三号鱼池 - Illumination',
+            name: '三号鱼池 - Illumination (lux)',
             data: environmentData.Light3,
             format: (val, name) => val.toFixed(2)
-          }],
-          yAxis: {
-            title: 'Illumination (lux)',
-            format: function (val) {
-              return val.toFixed(2);
-            }
-          },
+          }]
         })
       }
     }
@@ -383,17 +347,17 @@ Page({
       animation: false,
       background: '#f5f5f5',
       series: [{
-        name: '一号鱼池 - Water Temperature',
+        name: '一号鱼池 - Water Temperature (°C)',
         data: environmentData.waterTemperature1,
         format: function (val, name) {
           return val.toFixed(2);
-        }
+        },
       }],
       xAxis: {
         disableGrid: true
       },
       yAxis: {
-        title: 'Water Temperature (摄氏度)',
+        title: '',
         format: function (val) {
           return val.toFixed(2);
         }
