@@ -32,18 +32,36 @@ Page({
     this.setData({
       poolNo: "一号鱼池"
     })
+    wx.showLoading({
+      title: '加载中'
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
   },
 
   twoButton: function () {
     this.setData({
       poolNo: "二号鱼池"
     })
+    wx.showLoading({
+      title: '加载中'
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
   },
 
   threeButton: function () {
     this.setData({
       poolNo: "三号鱼池"
     })
+    wx.showLoading({
+      title: '加载中'
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
   },
 
   waterTemperatureButton: function () {
@@ -103,33 +121,34 @@ Page({
   },
 
   onLoad: function () {
-      //每隔6s自动获取一次数据进行更新
-      const timer = setInterval(() => {
-        if (this.data.poolNo == "一号鱼池") {
+    //每隔6s自动获取一次数据进行更新
+    const timer = setInterval(() => {
+      if (this.data.poolNo == "一号鱼池") {
         this.getDatapoints(devicesId1, api_key1).then(datapoints => {
           this.update(datapoints)
-        })} else if (this.data.poolNo == "二号鱼池"){
-          this.getDatapoints(devicesId2, api_key2).then(datapoints => {
-            this.update(datapoints)
-          })
-        } else if (this.data.poolNo == "三号鱼池"){
-          this.getDatapoints(devicesId3, api_key3).then(datapoints => {
-            this.update(datapoints)
-          })
-        }
-      }, 2000)
-      wx.showLoading({
-        title: '加载中'
-      })
+        })
+      } else if (this.data.poolNo == "二号鱼池") {
+        this.getDatapoints(devicesId2, api_key2).then(datapoints => {
+          this.update(datapoints)
+        })
+      } else if (this.data.poolNo == "三号鱼池") {
+        this.getDatapoints(devicesId3, api_key3).then(datapoints => {
+          this.update(datapoints)
+        })
+      }
+    }, 2000)
+    wx.showLoading({
+      title: '加载中'
+    })
 
-      this.getDatapoints(devicesId1, api_key1).then((datapoints) => {
-        wx.hideLoading()
-        this.firstDraw(datapoints)
-      }).catch((err) => {
-        wx.hideLoading()
-        console.error(err)
-        clearInterval(timer) //首次渲染发生错误时禁止自动刷新
-      })
+    this.getDatapoints(devicesId1, api_key1).then((datapoints) => {
+      wx.hideLoading()
+      this.firstDraw(datapoints)
+    }).catch((err) => {
+      wx.hideLoading()
+      console.error(err)
+      clearInterval(timer) //首次渲染发生错误时禁止自动刷新
+    })
   },
 
   getDatapoints: function (devicesId, api_key) {
@@ -174,22 +193,30 @@ Page({
     console.log(datapoints)
     const environmentData = this.convert(datapoints);
 
-    this.setData({
-      waterTemperature1: environmentData.waterTemperature1[environmentData.length - 1],
-      Light1: environmentData.Light1[environmentData.length - 1],
-      TDS1: environmentData.TDS1[environmentData.length - 1],
-      waterTemperature2: environmentData.waterTemperature2[environmentData.length - 1],
-      Light2: environmentData.Light2[environmentData.length - 1],
-      TDS2: environmentData.TDS2[environmentData.length - 1],
-      waterTemperature3: environmentData.waterTemperature3[environmentData.length - 1],
-      Light3: environmentData.Light3[environmentData.length - 1],
-      TDS3: environmentData.TDS3[environmentData.length - 1]
-    })
+    if (this.data.poolNo == "一号鱼池") {
+      this.setData({
+        waterTemperature1: environmentData.waterTemperature1[environmentData.length - 1],
+        Light1: environmentData.Light1[environmentData.length - 1],
+        TDS1: environmentData.TDS1[environmentData.length - 1],
+      })
+    } else if (this.data.poolNo == "二号鱼池") {
+      this.setData({
+        waterTemperature2: environmentData.waterTemperature2[environmentData.length - 1],
+        Light2: environmentData.Light2[environmentData.length - 1],
+        TDS2: environmentData.TDS2[environmentData.length - 1],
+      })
+    } else if (this.data.poolNo == "三号鱼池") {
+      this.setData({
+        waterTemperature3: environmentData.waterTemperature3[environmentData.length - 1],
+        Light3: environmentData.Light3[environmentData.length - 1],
+        TDS3: environmentData.TDS3[environmentData.length - 1]
+      })
+    }
 
     console.log(this.data.statusButton)
 
     if (this.data.poolNo == "一号鱼池") {
-      if (this.data.statusButton == "水温") {
+      if (this.data.statusButton == "水温" || this.data.statusButton == "") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
@@ -221,7 +248,7 @@ Page({
         })
       }
     } else if (this.data.poolNo == "二号鱼池") {
-      if (this.data.statusButton == "水温") {
+      if (this.data.statusButton == "水温" || this.data.statusButton == "") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
@@ -253,7 +280,7 @@ Page({
         })
       }
     } else if (this.data.poolNo == "三号鱼池") {
-      if (this.data.statusButton == "水温") {
+      if (this.data.statusButton == "水温" || this.data.statusButton == "") {
         this.lineChart.updateData({
           categories: environmentData.categories,
           series: [{
