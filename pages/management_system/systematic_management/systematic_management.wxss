@@ -42,6 +42,7 @@ Page{
   width: 75rpx;
   height: 75rpx;
   align-items: center;
+  margin-top: 5rpx;
 }
 
 .edi_1{

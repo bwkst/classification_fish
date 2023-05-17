@@ -62,6 +62,7 @@ Page({
     //每隔6s自动获取一次数据进行更新
     const timer = setInterval(() => {
       this.getDatapoints().then(datapoints => {
+        console.log(datapoints)
         this.update(datapoints)
       })
     }, 2000)
@@ -70,6 +71,7 @@ Page({
     })
 
     this.getDatapoints().then((datapoints) => {
+      console.log(datapoints)
       wx.hideLoading()
       this.firstDraw(datapoints)
     }).catch((err) => {
