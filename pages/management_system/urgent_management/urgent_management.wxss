@@ -30,7 +30,7 @@ Page{
   margin: 20rpx 15rpx 20rpx 15rpx;
   width: 540rpx;
   line-height: fit-content;
-  font-family: "um_font";
+  font-family: "um_font", "um_content_new";
   font-size: 0.9rem;
   padding: 15rpx 5rpx 15rpx 5rpx;
 }
@@ -45,7 +45,7 @@ Page{
   border: 4rpx solid #90C8BD;
   border-radius: 100rpx;
   font-size: 1.2rem;
-  font-family: "um_font";
+  font-family: "um_font", "um_content_new", "um_status_new";
 }
 
 .reminder{
@@ -77,5 +77,5 @@ Page{
   border-radius: 25rpx;
   background-color: #90C8BD;
   color: #264841;
-  margin-top: 50rpx;
+  margin-top: 55rpx;
 }

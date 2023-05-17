@@ -1,202 +1,296 @@
-const devicesId = "899161544" // devicesId
-const api_key = "E=0WdCeJBKGsORZhFxGGW0iaY2Q=" // Api-key 
+const devicesId1 = "899161544" // devicesId
+const api_key1 = "E=0WdCeJBKGsORZhFxGGW0iaY2Q=" // Api-key 
+const devicesId2 = "996195513" // devicesId
+const api_key2 = "W8PWDxCoGQWaVF46zn4gQYS820Y=" // Api-key 
+const devicesId3 = "996218346" // devicesId
+const api_key3 = "UUTNLzsdIw7e=RZI8rZyAyV9WFQ=" // Api-key 
+
 Page({
 
   data: {
-    temperature: "暂无数据",
-    small: "暂无数据",
-    medium: "暂无数据",
-    large: "暂无数据",
-    suggestTemperature: 30,
-    smallMaxCapacity: 20,
-    mediumMaxCapacity: 20,
-    largeMaxCapacity: 20,
+    warnTemp: "32",
+    oneTemp: "暂无数据",
+    twoTemp: "暂无数据",
+    threeTemp: "暂无数据",
+    oneTwoDif: "暂无数据",
+    oneThreeDif: "暂无数据",
+    twoThreeDif: "暂无数据",
     statusNow: "暂无数据",
     member: "暂无数据",
-    openId: "",
-    envId: "",
-    listenerOpenId: "",
-    listenerNickname: "",
+    poolNo: "一号鱼池"
   },
 
-  videoCall: function(){
-    var that = this;
-    console.log("当前1", that.data.openId)
-    console.log("专家1", that.data.listenerOpenId);
-    this.getOpenId();
-    this.getMember();
-    wx.setEnable1v1Chat({
-      enable: true,
-      success: function (res) {
-        console.log(res);
-        console.log("当前2", that.data.openId)
-        console.log("专家2", that.data.listenerOpenId);
-        wx.join1v1Chat({
-          caller: {
-            nickname: '小白',
-            openid: that.data.openId,
-          },
-          listener: {
-            nickname: that.data.listenerNickname,
-            openid: that.data.listenerOpenId,
-          },
-        })
-      },
-      fail: function (err) {
-        console.log(err)
-      },
-    })
-  },
-
-  getMember: function(){
-    var week = new Date().getDay();  
+  getMember: function () {
+    var week = new Date().getDay();
     switch (week) {
-      case 0:  
+      case 0:
         this.setData({
-          member: "符雪媛",
-          listenerOpenId: "odVu95Kvur6FP5SD_MqqLcGfTtRo",
-          listenerNickname: "权威专家-符老师"
+          member: "符雪媛"
         })
-        break;  
-      case 1:  
+        break;
+      case 1:
         this.setData({
-          member: "罗婷尹",
-          listenerOpenId: "odVu95KT9E-1xiCNAM74hWHb5qPc",
-          listenerNickname: "权威专家-罗老师"
+          member: "柯家宝"
         })
-        break;  
-      case 2:  
+        break;
+      case 2:
         this.setData({
-          member: "柯家宝",
-          listenerOpenId: "odVu95M1-c2jnTqy2Gjk1nl5Zurw",
-          listenerNickname: "资深研究员-北老师"
+          member: "符雪媛"
         })
-        break;  
-      case 3:  
+        break;
+      case 3:
         this.setData({
-          member: "赵太宁",
-          listenerOpenId: "odVu95CTen0t5_2tQBv TSTkRS_A",
-          listenerNickname: "资深研究员-赵老师"
+          member: "柯家宝"
         })
-        break;  
-      case 4: 
+        break;
+      case 4:
         this.setData({
-          member: "符雪媛",
-          listenerOpenId: "odVu95Kvur6FP5SD_MqqLcGfTtRo",
-          listenerNickname: "权威专家-符博士"
+          member: "符雪媛"
         })
-        break;  
-      case 5:  
+        break;
+      case 5:
         this.setData({
-          member: "罗婷尹",
-          listenerOpenId: "odVu95KT9E-1xiCNAM74hWHb5qPc",
-          listenerNickname: "权威专家-罗博士"
+          member: "柯家宝"
         })
         break;
       case 6:
         this.setData({
-          member: "柯家宝",
-          listenerOpenId: "odVu95M1-c2jnTqy2Gjk1nl5Zurw",
-          listenerNickname: "资深研究员-北老师"
+          member: "赵太宁"
         })
         break;
     }
   },
 
   /*打电话通知管理员*/
-  phoneCall: function(){  
-    var week = new Date().getDay();  
+  phoneCall: function () {
+    var week = new Date().getDay();
     var phoneNumber;
     switch (week) {
-      case 0:  
-        phoneNumber="15203013593";
-        break;  
-      case 1:  
-        phoneNumber="18389432506";
-        break;  
-      case 2:  
-        phoneNumber="13141011254"; 
-        break;  
-      case 3:  
-        phoneNumber="18889666813";  
-        break;  
-      case 4: 
-        phoneNumber="15203013593";
-        break;  
-      case 5:  
-        phoneNumber="18389432506";
+      case 0:
+        phoneNumber = "15203013593";
+        break;
+      case 1:
+        phoneNumber = "13141011254";
+        break;
+      case 2:
+        phoneNumber = "15203013593";
+        break;
+      case 3:
+        phoneNumber = "13141011254";
+        break;
+      case 4:
+        phoneNumber = "15203013593";
+        break;
+      case 5:
+        phoneNumber = "13141011254";
         break;
       case 6:
-        phoneNumber="13141011254";
+        phoneNumber = "17797028663";
         break;
     }
-    if (week >= 0){
+    if (week >= 0) {
       wx.makePhoneCall({
         phoneNumber: phoneNumber,
       });
     }
-    },
-  
-  /*获取当前温度和容量并进行判定(只完成了判定的部分)*/
-  getStatus: function(){
-    if (this.data.temperature >= this.data.suggestTemperature || this.data.small >= this.data.smallMaxCapacity || this.data.medium >= this.data.mediumMaxCapacity ||  this.data.large >= this.data.largeMaxCapacity ){
+  },
+
+  calculate: function () {
+    var oneTwoDif;
+    if (this.data.oneTemp >= this.data.twoTemp) {
+      oneTwoDif = this.data.oneTemp - this.data.twoTemp;
       this.setData({
-        statusNow:"异常状态"
+        oneTwoDif: oneTwoDif
       })
-      wx.vibrateLong();
-      wx.showToast({
-        title: '状态异常',
-        image: '../../img/urgent.png',
-        duration: 2500  //持续的时间
-      })
-    } else{
+    } else if (this.data.oneTemp < this.data.twoTemp) {
+      oneTwoDif = this.data.twoTemp - this.data.oneTemp;
       this.setData({
-        statusNow:"正常"
+        oneTwoDif: oneTwoDif
+      })
+    }
+    var oneThreeDif;
+    if (this.data.oneTemp >= this.data.threeTemp) {
+      oneThreeDif = this.data.oneTemp - this.data.threeTemp;
+      this.setData({
+        oneThreeDif: oneThreeDif
+      })
+    } else if (this.data.oneTemp < this.data.threeTemp) {
+      oneThreeDif = this.data.threeTemp - this.data.oneTemp;
+      this.setData({
+        oneThreeDif: oneThreeDif
+      })
+    }
+    var twoThreeDif;
+    if (this.data.twoTemp >= this.data.threeTemp) {
+      twoThreeDif = this.data.twoTemp - this.data.threeTemp;
+      this.setData({
+        twoThreeDif: twoThreeDif
+      })
+    } else if (this.data.twoTemp < this.data.threeTemp) {
+      twoThreeDif = this.data.threeTemp - this.data.twoTemp;
+      this.setData({
+        twoThreeDif: twoThreeDif
       })
     }
   },
-  
+
+  /*获取当前温度和容量并进行判定(只完成了判定的部分)*/
+  getStatus: function () {
+    this.calculate();
+    if (this.data.oneTemp >= this.data.warnTemp) {
+      this.setData({
+        statusNow: "一号鱼池水温过高"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '一号鱼池异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else if (this.data.twoTemp >= this.data.warnTemp) {
+      this.setData({
+        statusNow: "二号鱼池水温过高"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '二号鱼池异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else if (this.data.threeTemp >= this.data.warnTemp) {
+      this.setData({
+        statusNow: "三号鱼池水温过高"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '三号鱼池异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else if (this.data.oneTwoDif >= 5) {
+      this.setData({
+        statusNow: "一、二号鱼池温差过大"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '一、二号鱼池温差异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else if (this.data.oneThreeDif >= 5) {
+      this.setData({
+        statusNow: "一、三号鱼池温差过大"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '一、三号鱼池温差异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else if (this.data.twoThreeDif >= 5) {
+      this.setData({
+        statusNow: "二、三号鱼池温差过大"
+      })
+      wx.vibrateLong();
+      wx.showToast({
+        title: '二、三号鱼池温差异常',
+        image: '../../img/urgent.png',
+        duration: 2500 //持续的时间
+      })
+    } else {
+      this.setData({
+        statusNow: "所有鱼池状态正常"
+      })
+    }
+  },
+
   onPullDownRefresh: function () {
     wx.showNavigationBarLoading();
     this.onLoad();
-    this.getDatapoints().then(datapoints => {
-      this.update(datapoints)
-      wx.hideLoading()
-    }).catch((error) => {
-      wx.hideLoading()
-      console.error(error)})
+    if (this.data.poolNo == "一号鱼池") {
+      this.getDatapoints(devicesId1, api_key1).then(datapoints => {
+        this.update(datapoints)
+        this.setData({
+          poolNo: "二号鱼池"
+        })
+        wx.hideLoading()
+      }).catch((error) => {
+        wx.hideLoading()
+        console.error(error)
+      })
+    } else if (this.data.poolNo == "二号鱼池") {
+      this.getDatapoints(devicesId2, api_key2).then(datapoints => {
+        this.update(datapoints)
+        this.setData({
+          poolNo: "三号鱼池"
+        })
+        wx.hideLoading()
+      }).catch((error) => {
+        wx.hideLoading()
+        console.error(error)
+      })
+    } else if (this.data.poolNo == "三号鱼池") {
+      this.getDatapoints(devicesId3, api_key3).then(datapoints => {
+        this.update(datapoints)
+        this.setData({
+          poolNo: "一号鱼池"
+        })
+        wx.hideLoading()
+      }).catch((error) => {
+        wx.hideLoading()
+        console.error(error)
+      })
+    }
     wx.hideNavigationBarLoading();
     wx.stopPullDownRefresh();
-    this.getOpenId();
   },
 
   onLoad: function () {
-    console.log(`your deviceId: ${devicesId}, apiKey: ${api_key}`)
     //每隔6s自动获取一次数据进行更新
     const timer = setInterval(() => {
-      this.getDatapoints().then(datapoints => {
-        this.update(datapoints)
-      })
-    }, 5000)
+      if (this.data.poolNo == "一号鱼池") {
+        this.getDatapoints(devicesId1, api_key1).then(datapoints => {
+          this.update(datapoints)
+          this.setData({
+            poolNo: "二号鱼池"
+          })
+        })
+      } else if (this.data.poolNo == "二号鱼池") {
+        this.getDatapoints(devicesId2, api_key2).then(datapoints => {
+          this.update(datapoints)
+          this.setData({
+            poolNo: "三号鱼池"
+          })
+        })
+      } else if (this.data.poolNo == "三号鱼池") {
+        this.getDatapoints(devicesId3, api_key3).then(datapoints => {
+          this.update(datapoints)
+          this.setData({
+            poolNo: "一号鱼池"
+          })
+        })
+      }
+    }, 500)
     wx.showLoading({
       title: '加载中'
     })
-    this.getDatapoints().then((datapoints) => {
-      wx.hideLoading()
-      this.update(datapoints)
-    }).catch((err) => {
-      wx.hideLoading()
-      console.error(err)
-      clearInterval(timer) //首次渲染发生错误时禁止自动刷新
-    }),
 
-    this.getMember();
+    this.getDatapoints(devicesId1, api_key1).then((datapoints) => {
+        wx.hideLoading()
+        this.update(datapoints)
+      }).catch((err) => {
+        wx.hideLoading()
+        console.error(err)
+        clearInterval(timer) //首次渲染发生错误时禁止自动刷新
+      }),
+
+      this.getMember();
   },
 
-  getDatapoints: function () {
+  getDatapoints: function (devicesId, api_key) {
     return new Promise((resolve, reject) => {
       wx.request({
-        url: `https://api.heclouds.com/devices/${devicesId}/datapoints?datastream_id=Small,Medium,Large,Temperature&limit=20`,
+        url: `https://api.heclouds.com/devices/${devicesId}/datapoints?datastream_id=Watertemperature&limit=20`,
         header: {
           'content-type': 'application/json',
           'api-key': api_key
@@ -206,20 +300,17 @@ Page({
           const response = res.data
           if (status !== 200) { // 返回状态码不为200时将Promise置为reject状态
             reject(res.data)
-            return ;
+            return;
           }
           if (response.errno !== 0) { //errno不为零说明可能参数有误, 将Promise置为reject
             reject(response.error)
-            return ;
+            return;
           }
           if (response.data.datastreams.length === 0) {
             reject("当前设备无数据, 请先运行硬件实验")
           }
           //程序可以运行到这里说明请求成功, 将Promise置为resolve状态
           resolve({
-            large: response.data.datastreams[3].datapoints,
-            medium: response.data.datastreams[2].datapoints,
-            small: response.data.datastreams[1].datapoints,
             temperature: response.data.datastreams[0].datapoints
           })
         },
@@ -234,75 +325,59 @@ Page({
     const urgentManagementData = this.convert(datapoints);
 
     this.setData({
-      temperature: urgentManagementData.temperatureData[0],
-      small: parseInt(urgentManagementData.smallData[0]),
-      medium: parseInt(urgentManagementData.mediumData[0]),
-      large: parseInt(urgentManagementData.largeData[0])
-    }),
-    this.getStatus();
+        oneTemp: urgentManagementData.oneTemp[0],
+        twoTemp: urgentManagementData.twoTemp[0],
+        threeTemp: urgentManagementData.threeTemp[0],
+      }),
+
+      this.getStatus();
     this.getMember();
-    this.getOpenId();
   },
 
   convert: function (datapoints) {
-    var temperatureData = [];
-    var smallData = [];
-    var mediumData = [];
-    var largeData = [];
+    var oneTemp = [];
+    var twoTemp = [];
+    var threeTemp = [];
 
     var length = datapoints.temperature.length
     for (var i = 0; i < length; i++) {
-      temperatureData.push(datapoints.temperature[i].value);
-      smallData.push(datapoints.small[i].value);
-      mediumData.push(datapoints.medium[i].value);
-      largeData.push(datapoints.large[i].value);
+      if (this.data.poolNo == "一号鱼池") {
+        oneTemp.push(datapoints.temperature[i].value);
+      } else if (this.data.poolNo == "二号鱼池") {
+        twoTemp.push(datapoints.temperature[i].value);
+      } else if (this.data.poolNo == "三号鱼池") {
+        threeTemp.push(datapoints.temperature[i].value);
+      }
     }
     return {
-      temperatureData: temperatureData,
-      smallData: smallData,
-      mediumData: mediumData,
-      largeData: largeData
+      oneTemp: oneTemp,
+      twoTemp: twoTemp,
+      threeTemp: threeTemp
     }
   },
 
-  getOpenId() {
-    wx.cloud.callFunction({
-      name: 'quickstartFunctions',
-      config: {
-        env: this.data.envId
-      },
-      data: {
-        type: 'getOpenId'
-      }
-    }).then((resp) => {
-      this.setData({
-        openId: resp.result.openid
-      });
+  environment_data: function () {
+    wx.redirectTo({
+      url: '/pages/management_system/environment_data/environment_data',
     })
   },
 
-  environment_data: function(){
-    wx.redirectTo({
-      url: '/pages/management_system/environment_data/environment_data',
-      })
-  },
-
-  classification_management: function(){
+  classification_management: function () {
     wx.redirectTo({
       url: '/pages/management_system/classification_management/classification_management',
     })
   },
 
-  systematic_management: function(){
+  systematic_management: function () {
     wx.redirectTo({
       url: '/pages/management_system/systematic_management/systematic_management',
-      })
+    })
   },
 
-  urgent_management: function(){
+  urgent_management: function () {
     wx.redirectTo({
       url: '/pages/management_system/urgent_management/urgent_management',
-      })
+    })
   }
 
 })

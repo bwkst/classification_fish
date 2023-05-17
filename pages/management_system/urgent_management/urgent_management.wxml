@@ -2,19 +2,18 @@
 
 <scroll-view scroll-y="true">
   <view class="um_border">
-    <view class="um_content">当前温度：{{temperature}}°C；建议温度：{{suggestTemperature}}°C</view>
-    <view class="um_content">小鱼池数量：{{small}}；最大容量：{{smallMaxCapacity}}</view>
-    <view class="um_content">中鱼池数量：{{medium}}；最大容量：{{mediumMaxCapacity}}</view>
-    <view class="um_content">大鱼池数量：{{large}}；最大容量：{{largeMaxCapacity}}</view>
+    <view class="um_content">建议水温：21.5°C - 31.5°C</view>
+    <view class="um_content">一号鱼池水温：{{oneTemp}} °C</view>
+    <view class="um_content">二号鱼池水温：{{twoTemp}} °C</view>
+    <view class="um_content">三号鱼池水温：{{threeTemp}} °C</view>
   </view>
 
-  <view class="um_status">当前状态为：{{statusNow}}</view>
+  <view class="um_status">当前：{{statusNow}}</view>
 
   <view class="reminder">遇紧急情况，请点击下方按钮拨打电话！</view>
   <view class="um_reminder">今日值班人员：{{member}}</view>
 
   <button class="phoneButton" bindtap="phoneCall">点此拨打电话</button>
-  <button class="phoneButton" bindtap="videoCall">点此与专家视频</button>
 </scroll-view>
 
 <view style="height: 200rpx;"></view>
