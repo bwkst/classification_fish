@@ -8,7 +8,7 @@
 
     <button class="ed_button_major" bindtap="twoButton" style="width: 175rpx; margin: 0rpx">
       <text class="filter_text">二号鱼池</text>
-    </button> 
+    </button>
 
     <button class="ed_button_major" bindtap="threeButton" style="width: 175rpx; margin: 0rpx">
       <text class="filter_text">三号鱼池</text>
@@ -17,29 +17,65 @@
 
   <text class="content" style="display: flex; justify-content: center; margin-bottom: 40rpx;">当前鱼池：{{poolNo}}</text>
 
-  <view class="contentBorder">
-    <text class="content">当前水温：{{waterTemperature}} °C</text>
-    <image class="ed_image edi_1" src="../../img/temperature.png"></image>
+  <view wx:if='{{poolNo == "一号鱼池"}}'>
+    <view class="contentBorder">
+      <text class="content">当前水温：{{waterTemperature1}} °C</text>
+      <image class="ed_image edi_1" src="../../img/temperature.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前光照：{{Light1}} lux</text>
+      <image class="ed_image edi_2" src="../../img/light.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前水质：{{TDS1}} TDS</text>
+      <image class="ed_image edi_1" src="../../img/humidity.png" style="width: 55rpx; height: 55rpx; margin-top: 15rpx"></image>
+    </view>
   </view>
 
-  <view class="contentBorder">
-    <text class="content">当前光照：{{Light}} %</text>
-    <image class="ed_image edi_2" src="../../img/light.png"></image>
+  <view wx:elif='{{poolNo == "二号鱼池"}}'>
+    <view class="contentBorder">
+      <text class="content">当前水温：{{waterTemperature2}} °C</text>
+      <image class="ed_image edi_1" src="../../img/temperature.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前光照：{{Light2}} lux</text>
+      <image class="ed_image edi_2" src="../../img/light.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前水质：{{TDS2}} TDS</text>
+      <image class="ed_image edi_1" src="../../img/humidity.png" style="width: 55rpx; height: 55rpx; margin-top: 15rpx"></image>
+    </view>
   </view>
 
-  <view class="contentBorder">
-    <text class="content">当前水质：{{TDS}} TDS</text>
-    <image class="ed_image edi_1" src="../../img/humidity.png"></image>
+  <view wx:else>
+    <view class="contentBorder">
+      <text class="content">当前水温：{{waterTemperature3}} °C</text>
+      <image class="ed_image edi_1" src="../../img/temperature.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前光照：{{Light3}} lux</text>
+      <image class="ed_image edi_2" src="../../img/light.png"></image>
+    </view>
+
+    <view class="contentBorder">
+      <text class="content">当前水质：{{TDS3}} TDS</text>
+      <image class="ed_image edi_1" src="../../img/humidity.png" style="width: 55rpx; height: 55rpx; margin-top: 15rpx"></image>
+    </view>
   </view>
 
   <view class="stitle">变化曲线图</view>
 
   <view class="ed_row">
-    <button class="ed_button_major" bindtap="temperatureButton" style="width: 140rpx; margin: 0rpx">
+    <button class="ed_button_major" bindtap="waterTemperatureButton" style="width: 140rpx; margin: 0rpx">
       <text class="filter_text">水温</text>
     </button>
 
-    <button class="ed_button_major" bindtap="humidityButton" style="width: 140rpx; margin: 0rpx">
+    <button class="ed_button_major" bindtap="lightButton" style="width: 140rpx; margin: 0rpx">
       <text class="filter_text">光照</text>
     </button>
   </view>
